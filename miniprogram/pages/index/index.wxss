@@ -33,7 +33,7 @@
   background-color: wheat;
   padding: 10rpx;
   border: 5rpx solid rgb(16, 195, 54);
-  border-radius: 10rpx;
+  border-radius: 50rpx;
   width: 600rpx;
   height: 80rpx;
 }
