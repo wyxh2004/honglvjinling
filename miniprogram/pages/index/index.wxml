@@ -1,40 +1,35 @@
 <view >
-    <view >
-        <image src="/images/arrow.png" />
-    </view>
+    <view class="homepage" style="margin: 0 auto; top: 0px;">
+        <input type="text" class="input_text" bind:tap="onGetUserInput" placeholder="查一查，发现文都宝藏" />
+     </view>
 
-<!--     <view class="container" bind:tap="change"> {{hello}}</view>
- -->
-    <view class="homepage" style="margin: 0 auto;">
-        <image src="/images/home.png" class="homeicon"/>
-        <input type="text" class="input_text" bind:tap="onGetUserInput" placeholder="查一查，发现文都宝藏"  />
-    </view>
+    <view class="footer">
+        <view class="box">
+            <image src="/images/international.png" class="icon" />
+            <button class="button" bind:tap="onGetUserInfo">
+                <navigator class="button_text" url="/pages/index/index"> 首页</navigator >
+            </button>
+        </view>
 
-    <view class="box">
-        <image src="/images/international.png" class="icon" />
-        <button class="button" bind:tap="onGetUserInfo">
-            <view class="button_text">首页</view>
-        </button>
-    </view>
+        <view class="box">
+            <image src="/images/journey.png" class="icon" />
+            <button class="button" bind:tap="onGetUserInfo">
+                <navigator class="button_text" url="pages/route/index">游线</navigator>
+            </button>
+        </view>
 
-    <view class="box">
-        <image src="/images/journey.png" class="icon" />
-        <button class="button" bind:tap="onGetUserInfo">
-            <view class="button_text">游线</view>
-        </button>
-    </view>
+        <view class="box">
+            <image src="/images/local.png" class="icon" />
+            <button class="button" bind:tap="onGetUserInfo">
+                <navigator class="button_text" url="pages/explore/index">探索</navigator>
+            </button>
+        </view>
 
-    <view class="box">
-        <image src="/images/local.png" class="icon" />
-        <button class="button" bind:tap="onGetUserInfo">
-            <view class="button_text">探索</view>
-        </button>
-    </view>
-
-    <view class="box">
-        <image src="/images/map-road.png" class="icon" />
-        <button class="button" bind:tap="onGetUserInfo">
-            <view class="button_text">文学塔</view>
-        </button>
+        <view class="box">
+            <image src="/images/map-road.png" class="icon" />
+            <button class="button" bind:tap="onGetUserInfo">
+                <navigator class="button_text" url="pages/literature/index">文学</navigator>
+            </button>
+        </view>
     </view>
 </view> 

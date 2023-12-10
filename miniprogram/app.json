@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index","pages/route/index","pages/explore/index","pages/literature/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

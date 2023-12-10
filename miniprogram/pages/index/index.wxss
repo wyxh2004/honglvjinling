@@ -17,25 +17,63 @@
   height: 100rpx;
 }
 
+.footer{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+
 .box {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 500rpx;
-  height: 500rpx;
-  background-color: #fff;
+  width: 25vw;
+  flex: 60% 40% ;
+  height: 100rpx;
+  background-color: wheat;
   border-radius: 10rpx;
   box-shadow: 0 0 10rpx #ccc;
 }
 
-.input_text {
+.homepage {
+  display: flex;
+  text-align: center;
+  position: relative;
+  align-items: center;
   background-color: wheat;
   padding: 10rpx;
-  border: 5rpx solid rgb(16, 195, 54);
+  border: 5rpx solid yellow;
   border-radius: 50rpx;
-  width: 600rpx;
+  width: 97vw;
   height: 80rpx;
+}
+
+
+.homepage input {
+  padding-left: 30rpx;
+  padding-right: 30rpx; 
+  top: 50%;
+}
+
+.input_text {
+  width: 90%;
+  top: 50%;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+  font-size: 30rpx;
+}
+
+.homepage::after {
+  content: "\1F50D"; 
+  font-size: 50rpx;  
+  position: absolute;
+  top: 50%;
+  right: 10px;  
+  transform: translateY(-50%);
+  cursor: pointer; 
+}
+
+.button_text {
+  font-size: 25rpx;
 }
 
 .homeicon {
@@ -44,56 +82,9 @@
 }
 
 .icon {
-  width: 50rpx;
-  height: 50rpx;
+  width: 18vw;
+  width: 18svw;
+  height: 3vh;
+  height: 3svh;
 }
 
-.title {
-  font-size: 30rpx;
-  color: #333;
-  margin-bottom: 20rpx;
-}
-
-.top_tip {
-  font-size: 20rpx;
-  color: #999;
-  margin-bottom: 20rpx;
-}
-
-.button {
-  /*   position: fixed;
- */
-  display: flex;
-  border-radius: 40rpx;
-
-  background-color: hsl(210, 100%, 63%);
-  margin: 100rpx;
-  bottom: 0;
-}
-
-.button_text {
-  display: flex;
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-family: serif;
-  font-size: larger;
-  background-color: #409eff;
-  border-radius: 10rpx;
-  font-size: 40rpx;
-  margin-top: 20rpx;
-}
-
-/* .button_text{
-  color: #fff;
-  font-weight: 600;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: larger;
-  background-color: #409eff;
-  border-radius: 10rpx;
-  font-size: 20rpx;
-  margin-top: 20rpx;
-  margin-bottom: 20rpx;
-  border-radius: 50%;
-} */
