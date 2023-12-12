@@ -17,10 +17,13 @@
   height: 100rpx;
 }
 
-.theMap{
-  top:15vh;
-  height:70vh;
+#theMap{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
+  height: 85vh;
 }
 
 .footer{
