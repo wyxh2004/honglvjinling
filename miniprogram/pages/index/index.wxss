@@ -17,6 +17,12 @@
   height: 100rpx;
 }
 
+.theMap{
+  top:15vh;
+  height:70vh;
+  width: 100vw;
+}
+
 .footer{
   display: flex;
   position: fixed;
