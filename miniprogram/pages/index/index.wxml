@@ -4,14 +4,14 @@
      </view>
 
     <view class="theMap">
-    <map
-        id="theMap"
-        longitude="{{longitude}}"
-        latitude="{{latitude}}"
-        scale="20"
-        markers="{{markers}}"
-        bindcontroltap="controlTap"
-    ></map>
+        <map
+            id="theMap"
+            longitude="{{longitude}}"
+            latitude="{{latitude}}"
+            scale="{{scale}}"
+            markers="{{markers}}"
+            bindcontroltap="controlTap"
+        ></map>
     </view>
 
     <view class="footer">
