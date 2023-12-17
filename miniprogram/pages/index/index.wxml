@@ -6,8 +6,8 @@
     <view class="theMap">
     <map
         id="theMap"
-        longitude="113.324520"
-        latitude="23.099994"
+        longitude="{{longitude}}"
+        latitude="{{latitude}}"
         scale="20"
         markers="{{markers}}"
         bindcontroltap="controlTap"
