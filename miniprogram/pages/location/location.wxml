@@ -1,0 +1,3 @@
+<view>
+  <text>您搜索的地名是：{{locationName}}</text>
+</view>

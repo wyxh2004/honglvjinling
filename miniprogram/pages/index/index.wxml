@@ -1,6 +1,7 @@
 <view >
     <view class="homepage" style="margin: 0 auto; top: 0px;">
-        <input type="text" class="input_text" bind:tap="onGetUserInput" placeholder="查一查，发现文都宝藏" />
+        <input type="text" class="input_text" bindinput="onInput" value="{{searchKeyword}}" placeholder="查一查，发现文都宝藏" />
+        <button bindtap="searchLocation">搜索</button>
      </view>
 
     <view class="theMap">
