@@ -32,7 +32,7 @@
   flex: 60% 40% ;
   height: 100rpx;
   background-color: wheat;
-  border-radius: 10rpx;
+  border-radius: 6rpx;
   box-shadow: 0 0 10rpx #ccc;
 }
 
@@ -69,20 +69,17 @@
 
 .input_text {
   width: 90%;
+  height: 90%;
   top: 50%;
   border-radius: 10rpx;
   padding-left: 10rpx;
   font-size: 30rpx;
 }
 
-.homepage::after {
-  content: "\1F50D"; 
-  font-size: 50rpx;  
-  position: absolute;
-  top: 50%;
-  right: 10px;  
-  transform: translateZ(-50%);
-  cursor: pointer; 
+.homeicon{
+  margin: 0 auto;
+  height: 60vh;
+  width: 60vw;
 }
 
 .button_text {
@@ -95,9 +92,10 @@
 }
 
 .icon {
-  width: 18vw;
-  width: 18svw;
-  height: 3vh;
-  height: 3svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rpx;
+  height: 50rpx;
 }
 

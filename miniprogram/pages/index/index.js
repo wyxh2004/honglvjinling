@@ -46,7 +46,7 @@ Page({
                         latitude,
                         longitude,
                         title: '我的位置',
-                        iconPath: '/images/local.png',  // 自定义标记图标路径
+                        iconPath: '/images/position.png',  // 自定义标记图标路径
                         width: 40,
                         height: 40,
                     }],
@@ -65,12 +65,4 @@ Page({
         searchKeyword: '',  // 用户输入的地名
     },
 
-    // 处理地图拖动事件
-    regionchange: function (e) {
-        if (e.type === 'end') {
-            // 在地图拖动结束后，可以执行一些操作
-            console.log('地图拖动结束');
-        }
-    }
 });
-

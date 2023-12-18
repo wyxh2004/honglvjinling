@@ -1,7 +1,7 @@
 <view >
     <view class="homepage" style="margin: 0 auto; top: 0px;">
         <input type="text" class="input_text" bindinput="onInput" value="{{searchKeyword}}" placeholder="查一查，发现文都宝藏" />
-        <button bindtap="searchLocation">搜索</button>
+        <button bindtap="searchLocation" style="width: 200rpx; height: 200rpx;display: flex;align-items: center;justify-content: center;"><image src="/images/search.png" alt="search"  class="homeicon" style="width: 50rpx; height: 50rpx;"/></button>
      </view>
 
     <view class="theMap">
@@ -18,28 +18,28 @@
     <view class="footer">
         <view class="box">
             <image src="/images/international.png" class="icon" />
-            <button class="button" bind:tap="onGetUserInfo">
+            <button class="button" bindtap="onGetUserInfo">
                 <navigator class="button_text" url="/pages/index/index"> 首页</navigator >
             </button>
         </view>
 
         <view class="box">
             <image src="/images/journey.png" class="icon" />
-            <button class="button" bind:tap="onGetUserInfo">
+            <button class="button" bindtap="onGetUserInfo">
                 <navigator class="button_text" url="pages/route/index">游线</navigator>
             </button>
         </view>
 
         <view class="box">
             <image src="/images/local.png" class="icon" />
-            <button class="button" bind:tap="onGetUserInfo">
+            <button class="button" bindtap="onGetUserInfo">
                 <navigator class="button_text" url="pages/explore/index">探索</navigator>
             </button>
         </view>
 
         <view class="box">
             <image src="/images/map-road.png" class="icon" />
-            <button class="button" bind:tap="onGetUserInfo">
+            <button class="button" bindtap="onGetUserInfo">
                 <navigator class="button_text" url="pages/literature/index">文学</navigator>
             </button>
         </view>
