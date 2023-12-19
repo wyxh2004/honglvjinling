@@ -7,26 +7,30 @@ const db = cloud.database();
 
 // 修改数据库信息云函数入口函数
 exports.main = async (event, context) => {
+  const {OPENID} = cloud.getWXContext();
   try {
-    // 遍历修改数据库信息
-    for (let i = 0; i < event.data.length; i++) {
-      await db.collection('sales').where({
-        _id: event.data[i]._id
-      })
-        .update({
-          data: {
-            sales: event.data[i].sales
-          },
-        });
-    }
+    const { keyword } = event;
+    const timestamp = Date.now();
+
+    // 在云数据库中插入搜索记录
+    const result = await db.collection('search_records').add({
+      data: {
+        openid: OPENID,
+        keyword,
+        timestamp,
+      },
+    });
+
     return {
-      success: true,
-      data: event.data
+      code: 0,
+      msg: 'Record saved successfully',
+      data: result,
     };
-  } catch (e) {
+  } catch (error) {
     return {
-      success: false,
-      errMsg: e
+      code: 1,
+      msg: 'Failed to save record',
+      data: error,
     };
   }
 };

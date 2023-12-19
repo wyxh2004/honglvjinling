@@ -9,27 +9,13 @@ Page({
             searchKeyword: e.detail.value
         });
     },
-
-    // 处理搜索按钮点击事件
-    searchLocation: function () {
-        const keyword = this.data.searchKeyword;
-
-        // 检查用户是否输入了地名
-        if (keyword.trim() === '') {
-            wx.showToast({
-                title: '请输入地名',
-                icon: 'none',
-                duration: 2000
-            });
-            return;
-        }
-
-        // 跳转到地名页面，并将地名作为参数传递
-        wx.navigateTo({
-            url: '/pages/location/location?keyword=' + encodeURIComponent(keyword),
-        });
+    data: {
+        latitude: 32.0595,
+        longitude: 118.5904,
+        scale: 15,
+        markers: [],      // 地图标记点
+        searchKeyword: '',  // 用户输入的地名
     },
-
     // 获取用户当前位置
     getLocation: function () {
         wx.getLocation({
@@ -57,12 +43,10 @@ Page({
             }
         });
     },
-    data: {
-        latitude: 32.0595,     
-        longitude: 118.5904,    
-        scale: 15, 
-        markers: [],      // 地图标记点
-        searchKeyword: '',  // 用户输入的地名
+    // 跳转到搜索页面
+    goToSearch: function () {
+        wx.navigateTo({
+            url: '/pages/search/search',
+        });
     },
-
 });
