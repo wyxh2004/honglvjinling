@@ -18,7 +18,7 @@ Page({
     },
     getLocation: function () {
         wx.getLocation({
-            type: 'wgs84', 
+            type: 'wgs84',
             success: res => {
                 console.log('定位成功', res)
                 this.setData({
@@ -38,6 +38,11 @@ Page({
                 console.error('定位失败', err)
             }
         })
+    },
+    onInput: function (event) {
+        this.setData({
+            searchKeyword: event.detail.value,
+        });
     },
     goToSearch: function () {
         wx.navigateTo({

@@ -1,16 +1,24 @@
 <view>
     <view class="homepage" style="margin: 0 auto; top: 0px;">
-        <input type="text" class="input_text" bindtap="goToSearch" value="{{searchKeyword}}" placeholder="查一查，发现文都宝藏" />
-        <button bindtap="searchLocation" style="width: 200rpx; height: 200rpx;display: flex;align-items: center;justify-content: center;">
+        <input type="text" class="input_text" bind:tap="onInput" value="{{searchKeyword}}" placeholder="查一查，发现文都宝藏" />
+        <button bindtap="searchLocation" style="width: 200rpx; height: 100rpx;display: flex;align-items: center;justify-content: center;">
             <image src="/images/search.png" alt="search" class="homeicon" style="width: 50rpx; height: 50rpx;" />
         </button>
     </view>
     <view>
-        <text>搜索历史：</text>
-        <text wx:for="{{searchHistory}}" class="items">{{item}}</text>
+        <text style="font-size: 20rpx;font-weight: bold;font-family: 'Microsoft YaHei';font-size: 40rpx;margin: 50rpx; padding: 50rpx;top: 50rpx;">
+            搜索历史：
+        </text>
+        <view class="flex-items">
+            <text wx:for="{{searchHistory}}" class="items">{{item}}</text>
+        </view>
     </view>
     <view>
-        <text>猜你想搜：</text>
-        <text wx:for="{{guessWhatToSearch}}" class="items">{{item}}               </text>
+        <text style="font-size: 20rpx;font-weight: bold;font-family: 'Microsoft YaHei';font-size: 40rpx;margin: 50rpx; padding: 50rpx;top: 50rpx;">
+            猜你想搜：
+        </text>
+        <view class="flex-items">
+            <text wx:for="{{guessWhatToSearch}}" class="items">{{item}}</text>
+        </view>
     </view>
 </view>
