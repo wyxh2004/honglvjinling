@@ -83,17 +83,12 @@
 
 .homeicon{
   margin: 0 auto;
-  height: 60vh;
-  width: 60vw;
+  width: 30rpx;
+  height: 30rpx;
 }
 
 .button_text {
   font-size: 25rpx;
-}
-
-.homeicon {
-  width: 30rpx;
-  height: 30rpx;
 }
 
 .icon {

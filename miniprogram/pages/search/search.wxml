@@ -7,10 +7,10 @@
     </view>
     <view>
         <text>搜索历史：</text>
-        <text wx:for="{{searchHistory}}">{{item}}</text>
+        <text wx:for="{{searchHistory}}" class="items">{{item}}</text>
     </view>
     <view>
         <text>猜你想搜：</text>
-        <text wx:for="{{guessWhatToSearch}}">{{item}}               </text>
+        <text wx:for="{{guessWhatToSearch}}" class="items">{{item}}               </text>
     </view>
 </view>
