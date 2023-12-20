@@ -63,26 +63,3 @@
   color: #999;
   margin-bottom: 20rpx;
 }
-
-/* .button {
-  display: flex;
-  border-radius: 40rpx;
-  background-color: hsl(210, 100%, 63%);
-  margin: 100rpx;
-  bottom: 0;
-}
-
-.button_text {
-  display: flex;
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-family: serif;
-  font-size: larger;
-  background-color: #409eff;
-  border-radius: 10rpx;
-  font-size: 40rpx;
-  margin-top: 20rpx;
-}
- */

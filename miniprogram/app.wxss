@@ -18,6 +18,10 @@ button::after{
   border: none;
 }
 
+.custom-font-class {
+  font-family: 'CustomFontFamily', sans-serif; /* 自定义字体家族名称，后面可以跟一个备选字体 */
+}
+
 
 page {
   background: #f6f6f6;

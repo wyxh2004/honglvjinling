@@ -1,52 +1,67 @@
 Page({
+    onShareAppMessage: function () {
+        return {
+            title: '分享给好友',
+            path: '/pages/index/index', // 分享的路径
+            image: '../../images/logo.png', // 分享的图片
+        };
+    },
     onReady: function () {
         this.getLocation();
     },
-
-    // 处理输入事件
-    onInput: function (e) {
-        this.setData({
-            searchKeyword: e.detail.value
-        });
-    },
     data: {
-        latitude: 32.0595,
-        longitude: 118.5904,
-        scale: 15,
+        latitude: '',
+        longitude: '',
+        scale: 20,
         markers: [],      // 地图标记点
         searchKeyword: '',  // 用户输入的地名
     },
-    // 获取用户当前位置
     getLocation: function () {
         wx.getLocation({
-            type: 'wgs84',
-            success: (res) => {
-                const latitude = res.latitude;
-                const longitude = res.longitude;
-
+            type: 'wgs84', 
+            success: res => {
+                console.log('定位成功', res)
                 this.setData({
-                    latitude,
-                    longitude,
-                    markers: [{  // 在地图上标记用户当前位置
+                    latitude: res.latitude,
+                    longitude: res.longitude,
+                    markers: [{
                         id: 1,
-                        latitude,
-                        longitude,
-                        title: '我的位置',
-                        iconPath: '/images/position.png',  // 自定义标记图标路径
+                        latitude: res.latitude,
+                        longitude: res.longitude,
+                        iconPath: '/images/position.png',
                         width: 40,
                         height: 40,
-                    }],
-                });
+                    }]
+                })
             },
-            fail: (err) => {
-                console.error('获取地理位置失败：', err);
+            fail: err => {
+                console.error('定位失败', err)
             }
-        });
+        })
     },
-    // 跳转到搜索页面
     goToSearch: function () {
         wx.navigateTo({
             url: '/pages/search/search',
+        });
+    },
+    goToFontpage: function () {
+        wx.navigateTo({
+            url: '/pages/index/index',
+        });
+    },
+    goToTourline: function () {
+        wx.navigateTo({
+            url: '/pages/tourline/index',
+        });
+    },
+    goToExplore: function () {
+        wx.navigateTo({
+            url: '/pages/explore/index',
+        });
+    },
+    goToLiterature: function () {
+        wx.navigateTo({
+            url: '/pages/literature/index',
         });
     },
 });
