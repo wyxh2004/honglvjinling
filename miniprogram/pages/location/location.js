@@ -1,10 +1,4 @@
 Page({
-  onShareTimeline: function () {
-    return {
-      title: '分享到朋友圈',
-      image: '../../images/logo.png', // 分享的图片
-    };
-  },
   onShareAppMessage: function () {
     return {
       title: '分享给好友',

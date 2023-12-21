@@ -55,18 +55,39 @@
    height: 30rpx;
  }
 
- .flex-items{
-  display: flex;
-  flex-direction: row;
-  justify-self: space-between;
+ .flex-items {
+   display: flex;
+   flex-direction: row;
+   justify-self: space-between;
  }
- .items {
+
+ .grid-items {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); 
+   align-items: center;
+   justify-items: center;
+ }
+
+ .items-1 {
    width: 200rpx;
    height: 100rpx;
    margin: 30rpx;
    border: 3rpx solid yellow;
    border-radius: 30%;
-   background-color: linear-gradient(to right, #f093fb, #f5576c, #fd4d47);
+   background-color: wheat;
+   font-family: Microsoft YaHei;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .items-2 {
+   width: 150rpx;
+   height: 80rpx;
+   margin: 30rpx;
+   border: 3rpx solid yellow;
+   border-radius: 30%;
+   background-color: wheat;
    font-family: Microsoft YaHei;
    display: flex;
    align-items: center;

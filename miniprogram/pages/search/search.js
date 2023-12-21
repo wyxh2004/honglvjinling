@@ -42,6 +42,10 @@ Page({
             });
             return;
         }
+        this.setData({
+            searchHistory: [inputValue, ...this.data.searchHistory],
+            inputValue: '',  // 清空输入框
+          });
 
         // 跳转到地名页面，并将地名作为参数传递
         wx.navigateTo({
@@ -49,6 +53,7 @@ Page({
         });
     },
     data: {
+        inputValue: '',
         searchHistory: ['小程序', '开发', '教程'], // 搜索历史数据
         guessWhatToSearch: ['文学客厅', '红楼梦', '玄武湖', '栖霞山', '六朝', '设计廊', '王安石', '秦淮', '民国建筑', '城墙', '美术馆', '李白', '儒林外史', '乌衣巷', '鸡鸣寺', '朱元璋', '雨花台', '谢灵运', '金陵', '文心雕龙', '颜真卿', '南京博物院', '夫子庙', '钟山风景名胜区'], // 猜你想搜数据
         searchKeyword: '', // 搜索关键字
