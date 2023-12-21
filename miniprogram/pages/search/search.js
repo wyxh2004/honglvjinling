@@ -29,12 +29,12 @@ Page({
             },
         });
     },
-    // 处理搜索按钮点击事件
+    // 处理搜索按钮点击事件 
     searchLocation: function () {
         const keyword = this.data.searchKeyword;
 
         // 检查用户是否输入了地名
-        if (keyword.trim() === '') {
+        if (keyword === '') {
             wx.showToast({
                 title: '请输入地名',
                 icon: 'none',
@@ -51,5 +51,6 @@ Page({
     data: {
         searchHistory: ['小程序', '开发', '教程'], // 搜索历史数据
         guessWhatToSearch: ['文学客厅', '红楼梦', '玄武湖', '栖霞山', '六朝', '设计廊', '王安石', '秦淮', '民国建筑', '城墙', '美术馆', '李白', '儒林外史', '乌衣巷', '鸡鸣寺', '朱元璋', '雨花台', '谢灵运', '金陵', '文心雕龙', '颜真卿', '南京博物院', '夫子庙', '钟山风景名胜区'], // 猜你想搜数据
+        searchKeyword: '', // 搜索关键字
     },
 })

@@ -12,7 +12,7 @@ Page({
     data: {
         latitude: '',
         longitude: '',
-        scale: 20,
+        scale: 18,
         markers: [],      // 地图标记点
         searchKeyword: '',  // 用户输入的地名
     },
@@ -38,11 +38,6 @@ Page({
                 console.error('定位失败', err)
             }
         })
-    },
-    onInput: function (event) {
-        this.setData({
-            searchKeyword: event.detail.value,
-        });
     },
     goToSearch: function () {
         wx.navigateTo({
