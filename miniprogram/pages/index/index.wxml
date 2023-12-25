@@ -1,6 +1,6 @@
 <view>
     <view>
-        <image src="/images/journey.png" mode="aspectFill" class="avatar" bindtap="gotoAvatar"></image>
+        <image src="/images/avatar.png" mode="aspectFill" class="avatar" bindtap="gotoAvatar"></image>
     </view>
 
     <view class="homepage" style="margin: 0 auto; top: 0px;">
