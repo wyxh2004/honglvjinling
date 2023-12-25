@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "设置头像",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于提供附近服务。"
+        }
+    }
+}

@@ -12,9 +12,9 @@ Page({
 
   onLoad: function (options) {
     // 从参数中获取地名并更新页面数据
-    const keyword = options.keyword || '';
+    const inputValue = options.inputValue || '';
     this.setData({
-      locationName: decodeURIComponent(keyword),
+      locationName: decodeURIComponent(inputValue),
     });
   }
 });

@@ -1,6 +1,6 @@
 <view>
     <view>
-        <image src="/images/journey.png" mode="aspectFill" class="avatar" bindtap="gotoAvatar"></image>
+        <image src="{{avatarUrl}}" mode="aspectFill" class="avatar" bindtap="chooseImage"></image>
     </view>
 
     <view class="homepage" style="margin: 0 auto; top: 0px;">
@@ -23,28 +23,28 @@
         <view class="box">
             <image src="/images/international.png" class="icon" />
             <button class="button" bindtap="goToFontpage">
-                <navigator class="button_text"> 首页</navigator >
+                <navigator class="button_text" url="/pages/index/index"> 首页</navigator >
             </button>
         </view>
 
         <view class="box">
             <image src="/images/journey.png" class="icon" />
             <button class="button" bindtap="goToTourline">
-                <navigator class="button_text">游线</navigator>
+                <navigator class="button_text" url="pages/route/index">游线</navigator>
             </button>
         </view>
 
         <view class="box">
             <image src="/images/local.png" class="icon" />
             <button class="button" bindtap="goToExplore">
-                <navigator class="button_text">探索</navigator>
+                <navigator class="button_text" url="pages/explore/index">探索</navigator>
             </button>
         </view>
 
         <view class="box">
             <image src="/images/map-road.png" class="icon" />
             <button class="button" bindtap="goToLiterature">
-                <navigator class="button_text">文学</navigator>
+                <navigator class="button_text" url="pages/literature/index">文学</navigator>
             </button>
         </view>
     </view>

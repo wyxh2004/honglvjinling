@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index","pages/tourline/index","pages/explore/index","pages/literature/index","pages/location/location","pages/search/search"
+    "pages/index/index","pages/tourline/index","pages/explore/index","pages/literature/index","pages/location/location","pages/search/search","pages/avatar/avatar"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
