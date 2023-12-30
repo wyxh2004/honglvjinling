@@ -39,6 +39,11 @@ Page({
             }
         })
     },
+    goToAvatar: function () {
+        wx.navigateTo({
+            url: '/pages/avatar/avatar',
+        });
+    },
     goToSearch: function () {
         wx.navigateTo({
             url: '/pages/search/search',
