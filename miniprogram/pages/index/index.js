@@ -15,6 +15,7 @@ Page({
         scale: 18,
         markers: [],      // 地图标记点
         searchKeyword: '',  // 用户输入的地名
+        buttons: [{ text: '取消' }, { text: '确认' }]
     },
     getLocation: function () {
         wx.getLocation({

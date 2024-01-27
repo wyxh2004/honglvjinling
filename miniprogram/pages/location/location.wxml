@@ -1,8 +1,5 @@
 <view >
-    <view class="homepage" style="margin: 0 auto; top: 0px;">
-        <input type="text" class="input_text" bindinput="onInput" value="{{searchKeyword}}" placeholder="您搜索的地名是：{{locationName}}" />
-
-     </view>
+    <view ></view>
 
     <view class="theMap">
         <map

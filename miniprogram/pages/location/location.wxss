@@ -1,10 +1,32 @@
-#theMap{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100%;
-    height: 100vh;
-  }
-  
+#theMap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+}
+
+.box {
+  transform: translateZ(-50%);
+  display: flex;
+  align-items: center;
+  width: 25vw;
+  height: 8vh;
+  flex: 60% 40%;
+  height: 100rpx;
+  background-color: wheat;
+  border-radius: 6rpx;
+  box-shadow: 0 0 10rpx #ccc;
+}
+
+.icon {
+  margin: 0 auto;
+  width: 80px;
+  height: 40px;
+}
