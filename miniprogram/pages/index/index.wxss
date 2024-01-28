@@ -52,13 +52,20 @@
   z-index: -100;
 }
 
-.homepage {
+.inputbar {
   transform: translateZ(-50%);
   display: flex;
   text-align: center;
   position: relative;
   align-items: center;
-  background-color: wheat;
+  border: 0px solid rgba(100, 100, 100, 1);
+  border-radius: 75px;
+  background: linear-gradient(45deg,
+      rgba(255, 69, 8, 1) 21%,
+      rgba(247, 138, 22, 1) 41%,
+      rgba(238, 255, 0, 1) 83%);
+  background-blend-mode: normal;
+  box-shadow: inset -7px -7px 8px 0px rgba(171, 63, 39, 0.603);
   padding: 10rpx;
   border: 5rpx solid yellow;
   border-radius: 50rpx;
@@ -67,7 +74,7 @@
 }
 
 
-.homepage input {
+.inputbar input {
   padding-left: 30rpx;
   padding-right: 30rpx;
   top: 50%;

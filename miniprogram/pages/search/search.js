@@ -26,9 +26,9 @@ Page({
             return;
         }
         this.setData({
-            searchHistory: [inputValue, ...this.data.searchHistory],
+            searchHistory: [...this.data.searchHistory, inputValue],
             inputValue: '',  // 清空输入框
-          });
+        });
 
         // 跳转到地名页面，并将地名作为参数传递
         wx.navigateTo({

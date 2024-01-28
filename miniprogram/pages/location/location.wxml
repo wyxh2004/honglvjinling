@@ -1,44 +1,5 @@
-<view >
-    <view ></view>
-
+<view>
     <view class="theMap">
-        <map
-            id="theMap"
-            longitude="{{longitude}}"
-            latitude="{{latitude}}"
-            scale="{{scale}}"
-            markers="{{markers}}"
-            bindcontroltap="controlTap"
-        ></map>
+        <map id="theMap" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" markers="{{markers}}" bindcontroltap="controlTap"></map>
     </view>
-
-    <view class="footer">
-        <view class="box">
-            <image src="/images/international.png" class="icon" />
-            <button class="button" bindtap="onGetUserInfo">
-                <navigator class="button_text" url="/pages/index/index"> 首页</navigator >
-            </button>
-        </view>
-
-        <view class="box">
-            <image src="/images/journey.png" class="icon" />
-            <button class="button" bindtap="onGetUserInfo">
-                <navigator class="button_text" url="pages/route/index">游线</navigator>
-            </button>
-        </view>
-
-        <view class="box">
-            <image src="/images/local.png" class="icon" />
-            <button class="button" bindtap="onGetUserInfo">
-                <navigator class="button_text" url="pages/explore/index">探索</navigator>
-            </button>
-        </view>
-
-        <view class="box">
-            <image src="/images/map-road.png" class="icon" />
-            <button class="button" bindtap="onGetUserInfo">
-                <navigator class="button_text" url="pages/literature/index">文学</navigator>
-            </button>
-        </view>
-    </view>
-</view> 
+</view>
