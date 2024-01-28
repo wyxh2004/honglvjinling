@@ -6,7 +6,8 @@
     "pages/route/route",
     "pages/location/location",
     "pages/search/search",
-    "pages/avatar/avatar"
+    "pages/avatar/avatar",
+    "pages/register/register"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

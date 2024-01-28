@@ -51,12 +51,6 @@
    height: 30rpx;
  }
 
- .flex-items {
-   display: flex;
-   flex-direction: row;
-   justify-self: space-between;
- }
-
  .grid-items {
    display: grid;
    grid-template-columns: repeat(3, 1fr);

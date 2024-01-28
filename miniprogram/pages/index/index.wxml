@@ -7,6 +7,6 @@
         </button>
     </view>
     <view class="theMap">
-        <map id="theMap" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" markers="{{markers}}" bindcontroltap="controlTap" style="position: relative; left: 0rpx; top: 0rpx"></map>
+        <map id="theMap" longitude="{{longitude}}" latitude="{{latitude}}" show-compass="{{true}}" enable-overlooking="{{true}}" scale="{{scale}}" markers="{{markers}}" bindcontroltap="controlTap" style="position: relative; left: 0rpx; top: 0rpx"></map>
     </view>
 </view>
