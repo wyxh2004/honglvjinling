@@ -58,16 +58,14 @@
   text-align: center;
   position: relative;
   align-items: center;
-  border: 0px solid rgba(100, 100, 100, 1);
+  border: 0px solid rgb(255, 85, 0);
   border-radius: 75px;
-  background: linear-gradient(45deg,
-      rgba(255, 69, 8, 1) 21%,
-      rgba(247, 138, 22, 1) 41%,
-      rgba(238, 255, 0, 1) 83%);
+  background: linear-gradient(180deg,
+      rgba(255, 99, 47, 0.904) 21%,
+      rgba(245, 214, 214, 0.881) 100%);
   background-blend-mode: normal;
-  box-shadow: inset -7px -7px 8px 0px rgba(171, 63, 39, 0.603);
   padding: 10rpx;
-  border: 5rpx solid yellow;
+  border: 5rpx solid rgb(255, 0, 0);
   border-radius: 50rpx;
   width: 97vw;
   height: 80rpx;

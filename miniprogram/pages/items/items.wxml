@@ -1,0 +1,11 @@
+<view>
+    <view class="swiper-container">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imageUrls}}" wx:key="index">
+                <swiper-item>
+                    <image src="{{item}}" class="swiper-image" mode="aspectFill"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+</view>

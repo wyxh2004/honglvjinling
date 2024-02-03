@@ -10,12 +10,16 @@ Page({
             path: '/pages/index/index', // 分享的路径
         };
     },
-    data: {
-        hello: "hi",
+    onLoad: function () {
+        wx.showShareMenu({
+            withShareTicket: true,
+            menus: ['shareAppMessage', 'shareTimeline']
+        });
     },
-    change: function () {
-        this.setData({
-            hello: this.data.hello + " world"
-        })
+    data: {
+        routeList: [
+            '雨花台烈士陵园',
+            '南京大屠杀纪念馆',
+        ]
     }
 });

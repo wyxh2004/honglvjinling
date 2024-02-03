@@ -26,7 +26,7 @@
         <view class="section">
             <view class="title">地区：</view>
             <picker mode="region" value="{{region}}" bindchange="regionChange" level="province" class="input" name="region">
-                <view class="picker">出生年: {{region}}</view>
+                <view class="picker">当前选择: {{region}}</view>
             </picker>
         </view>
         <view class="area">

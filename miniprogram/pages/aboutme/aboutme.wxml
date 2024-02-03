@@ -1,3 +1,57 @@
-<view >
-
-</view> 
+<view class="center">
+    <view class="blue-top">
+        <view class="user-card">
+            <!-- <button bind:tap="handleBindTap" type="default">
+                <text>点击我</text>
+            </button> -->
+            <view class="card-top">
+                <view class="user-top">
+                    <view class="user-vip" style="position:relative;">
+                        <image class="user-pic" src="{{hasUserInfo ? userInfo.avatarUrl : '/images/avatar.png'}}"></image>
+                    </view>
+                    <!-- <view class="user-board">
+                        <button wx:if="{{!hasUserInfo}}" class="user-name" bindtap="register">
+                            点击注册/登陆
+                        </button>
+                        <view wx:if="{{hasUserInfo}}" class="user-name">{{userInfo.nickName}}</view>
+                    </view> -->
+                    <view class="user-pic" src="/images/avatar.png">
+                        <button bindtap="register" class="user-name">点击注册/登陆</button>
+                    </view>
+                </view>
+            </view>
+            <view class="card-bottom">
+                <view class="left">
+                    <view class="count">
+                        <text class="num">{{dailyFreeParseNum}} 个</text>
+                    </view>
+                    <text class="txt">收藏景点</text>
+                </view>
+                <view class="right">
+                    <view class="count">
+                        <text class="num">{{totalParseNum}} 条</text>
+                    </view>
+                    <text class="txt">收藏路线</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="center-list">
+        <button class="center-list-item" openType="contact">
+            <icon class="icon1" color="#00c8fd" size="50" type="kefu"></icon>
+            <text class="list-text">联系我们</text>
+            <icon class="icon2" color="#8a8a8a" size="30" type="youjiantou"></icon>
+        </button>
+        <button class="center-list-item" openType="share">
+            <icon class="icon1" color="#00c8fd" size="40" type="share"></icon>
+            <text class="list-text">分享</text>
+            <icon class="icon2" color="#8a8a8a" size="30" type="youjiantou"></icon>
+        </button>
+        <button bindtap="showQrcode" open-type="navigate" class="center-list-item">
+            <icon class="icon1" color="#00c8fd" size="50" type="zan1"></icon>
+            <text class="list-text">赞赏支持</text>
+            <icon class="icon2" color="#8a8a8a" size="30" type="youjiantou"></icon>
+        </button>
+    </view>
+    <view class="relief">© 2024 ys.wang</view>
+</view>

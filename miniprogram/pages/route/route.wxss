@@ -1,88 +1,17 @@
-.container {
-  padding: 20rpx;
-  position: fixed;
-  top: 0;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.homepage {
-/*   display: flex;
- */  top: 0;
-  position: absolute;
-  justify-content: center;
-  align-self: center;
+.route {
+  display: flex;
   align-items: center;
-  margin: 0 auto;
-  width: 100rpx;
-  height: 100rpx;
+  justify-content: center;
 }
 
-.box {
-  display: grid;
-
-  width: 100rpx;
-  height: 100rpx;
-  background-color: green;
-  border-radius: 10rpx;
-  box-shadow: 0 0 10rpx #ccc;
-}
-
-.input_text {
-  background-color: wheat;
-  padding: 10rpx;
-  border: 5rpx solid rgb(16, 195, 54);
-  border-radius: 50rpx;
+.route_item {
+  background-color: aqua;
+  background-image: url('https://electron-2023-1322159997.cos.ap-nanjing.myqcloud.com/1702457087635.jpeg?q-sign-algorithm=sha1&q-ak=AKIDAOHMG_ST5pswCLONjuSfIKCB_kT-OqbCatpUofEwigLvgMQabHrZEFN7P7daC517&q-sign-time=1706865285;1706868885&q-key-time=1706865285;1706868885&q-header-list=host&q-url-param-list=ci-process&q-signature=1ddbbf0011cb228ce831d3f8a1069266ad98593a&x-cos-security-token=Ima0Mrt3taEghcRttBTaMSvvbWFf7hYaa4155e98a1d3513a526c1b2c6a4c158cchVeILHDq8L2RC-uuoYNJli1yLK-7avtNz-wx29hxD7VulPU5T8V4vu-4YILmzV_BgePkezVOOkhLvRB_92Nk86yc0sxNBqx6ncL7k75FZHyWtt8TJijEGTCp80pqxIbqdDohdgVs32EC07O-g8hPvhuzqrmX_bg1Wj3naQt_pzm5gqrZ1ABaj9Ij7gnYRxd&ci-process=originImage');
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 600rpx;
-  height: 80rpx;
+  height: 250rpx;
 }
-
-.homeicon {
-  width: 30rpx;
-  height: 30rpx;
-}
-
-.search{
-  width: 60rpx;
-  height: 60rpx;
-}
-
-.icon {
-  width: 50rpx;
-  height: 50rpx;
-}
-
-.title {
-  font-size: 30rpx;
-  color: #333;
-  margin-bottom: 20rpx;
-}
-
-.top_tip {
-  font-size: 20rpx;
-  color: #999;
-  margin-bottom: 20rpx;
-}
-
-/* .button {
-  display: flex;
-  border-radius: 40rpx;
-  background-color: hsl(210, 100%, 63%);
-  margin: 100rpx;
-  bottom: 0;
-}
-
-.button_text {
-  display: flex;
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-family: serif;
-  font-size: larger;
-  background-color: #409eff;
-  border-radius: 10rpx;
-  font-size: 40rpx;
-  margin-top: 20rpx;
-}
- */

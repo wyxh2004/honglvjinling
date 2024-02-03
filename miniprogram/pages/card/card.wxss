@@ -1,0 +1,17 @@
+.swiper-container {
+    width: 100%;
+    height: 200px;
+    /* 设置轮播图高度 */
+}
+
+.card_name {
+    text-align: center;
+}
+
+.card_tickets {
+    text-align: center;
+}
+
+.card_introduction {
+    text-align: center;
+}

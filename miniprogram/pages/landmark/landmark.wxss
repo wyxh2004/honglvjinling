@@ -1,88 +1,63 @@
-.container {
-  padding: 20rpx;
-  position: fixed;
-  top: 0;
+.swiper-container {
+  width: 100%;
+  height: 200px;
+  /* 设置轮播图高度 */
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+}
+
+.inputbar {
+  transform: translateZ(-50%);
+  display: flex;
   text-align: center;
-  margin: 0 auto;
-}
-
-.homepage {
-/*   display: flex;
- */  top: 0;
-  position: absolute;
-  justify-content: center;
-  align-self: center;
+  position: relative;
   align-items: center;
-  margin: 0 auto;
-  width: 100rpx;
-  height: 100rpx;
-}
-
-.box {
-  display: grid;
-
-  width: 100rpx;
-  height: 100rpx;
-  background-color: green;
-  border-radius: 10rpx;
-  box-shadow: 0 0 10rpx #ccc;
-}
-
-.input_text {
-  background-color: wheat;
+  border: 0px solid rgb(255, 85, 0);
+  border-radius: 75px;
+  background: linear-gradient(180deg,
+      rgba(255, 99, 47, 0.904) 21%,
+      rgba(245, 214, 214, 0.881) 100%);
+  background-blend-mode: normal;
   padding: 10rpx;
-  border: 5rpx solid rgb(16, 195, 54);
+  border: 5rpx solid rgb(255, 0, 0);
   border-radius: 50rpx;
-  width: 600rpx;
+  width: 97vw;
   height: 80rpx;
 }
 
-.homeicon {
-  width: 30rpx;
-  height: 30rpx;
+
+.inputbar input {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  top: 50%;
 }
 
-.search{
-  width: 60rpx;
-  height: 60rpx;
-}
-
-.icon {
-  width: 50rpx;
-  height: 50rpx;
-}
-
-.title {
+.input_text {
+  font-family: CustomFontFamily;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
   font-size: 30rpx;
-  color: #333;
-  margin-bottom: 20rpx;
 }
 
-.top_tip {
-  font-size: 20rpx;
-  color: #999;
-  margin-bottom: 20rpx;
-}
-
-/* .button {
+.landmark {
   display: flex;
-  border-radius: 40rpx;
-  background-color: hsl(210, 100%, 63%);
-  margin: 100rpx;
-  bottom: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.button_text {
+.landmark_item {
   display: flex;
-  color: #fff;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-family: serif;
-  font-size: larger;
-  background-color: #409eff;
-  border-radius: 10rpx;
-  font-size: 40rpx;
-  margin-top: 20rpx;
+  background-color: rgb(252, 244, 2);
+  margin: 20px;
+  padding: 10px;
+  width: 600rpx;
+  height: 250rpx;
 }
- */

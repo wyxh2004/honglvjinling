@@ -1,0 +1,13 @@
+<view>
+    <!-- 轮播图 -->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{data.imgs}}" wx:for-item="img_item" wx:key="index">
+            <swiper-item>
+                <image src="{{img_item.imgs}}" class="swiper-image" mode="aspectFill"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="card_name">{{data.name}}</view>
+    <view class="card_tickets">{{data.tickets}}</view>
+    <view class="card_introduction">{{data.introduction}}</view>
+</view>

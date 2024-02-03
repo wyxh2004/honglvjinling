@@ -1,0 +1,10 @@
+.swiper-container {
+  width: 100%;
+  height: 200px;
+  /* 设置轮播图高度 */
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+}
