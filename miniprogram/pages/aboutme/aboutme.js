@@ -10,6 +10,39 @@ Page({
             url: '/pages/register/register'
         })
     },
+    register: function () {
+        wx.navigateTo({
+        })
+    },
+    //打赏
+    showQrcode() {
+        wx.previewImage({
+            urls: ['https://p.ananas.chaoxing.com/star3/origin/147cde54c811fd1e83701947fa847080.png'],
+            current: 'https://p.ananas.chaoxing.com/star3/origin/147cde54c811fd1e83701947fa847080.png', // 当前显示图片的http链接
+        })
+    },
+    //分享小程序
+    onShareAppMessage: function () {
+        return {
+            title: 'landmarkmap小程序',
+            path: '/pages/index/index',
+            imageUrl: '/images/position.png',
+            success: function (e) {
+                wx.showToast({
+                    title: "分享成功",
+                    icon: "success",
+                    duration: 2e3
+                });
+            },
+            fail: function (e) {
+                wx.showToast({
+                    title: "分享失败",
+                    icon: "none",
+                    duration: 2e3
+                });
+            }
+        }
+    },
 });
 
 // const util = require('../../utils/util.js');
@@ -107,40 +140,5 @@ Page({
 //         })
 //     },
 
-//     //打赏
-//     showQrcode() {
-//         wx.previewImage({
-//             urls: ['https://m1-1253159997.image.myqcloud.com/images/f58330a41a41d8776db5a7860eb2c9b5.JPG'],
-//             current: 'https://m1-1253159997.image.myqcloud.com/images/f58330a41a41d8776db5a7860eb2c9b5.JPG' // 当前显示图片的http链接
-//         })
-//     },
-
-//     //分享小程序
-//     onShareAppMessage: function () {
-//         return {
-//             title: this.data.config_base_list.share_title ? this.data.config_base_list.share_title : '推荐一款超好用的视频去水印工具，免费解析不限次，大家都在用',
-//             path: '/pages/index/index',
-//             imageUrl: this.data.config_base_list.share_imageUrl ? this.data.config_base_list.share_imageUrl : '/images/share.jpg',
-//             success: function (e) {
-//                 wx.showToast({
-//                     title: "分享成功",
-//                     icon: "success",
-//                     duration: 2e3
-//                 });
-//             },
-//             fail: function (e) {
-//                 wx.showToast({
-//                     title: "分享失败",
-//                     icon: "none",
-//                     duration: 2e3
-//                 });
-//             }
-//         }
-//     },
-//     handleBindTap: function () {
-//         wx.navigateTo({
-//             url: '/pages/register/register'
-//         })
-//     },
 
 // })

@@ -24,7 +24,7 @@ Page({
       },
       {
         name: '南京大屠杀纪念馆',
-        tickets: '门票10元',
+        tickets: '门票价格会根据季节和具体的区域有所不同，通常有不同的套票选择',
         introduction: '南京大屠杀纪念馆位于南京市雨花台区中华门大街100号，是南京大屠杀的纪念地，也是全国重点文物保护单位。南京大屠杀是1937年9月14日南京大屠杀发生后，中国军民为纪念这一历史事件而建立的纪念性纪念馆。纪念馆以“国家公祭”为主题，以“国家公祭日”为年节。',
         opening_hours: '【 开放时间 】周一至周日 9:00-16:00',
         route_plan: '（1）地铁：中华门站，后步行约一公里，推荐从北大门进入 1231231223123',
@@ -32,6 +32,31 @@ Page({
           'https://zh.wikipedia.org/zh-cn/File:%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%E6%9C%AA%E5%91%BD%E5%90%8D%E7%89%87.jpg',
           'https://www.rednanjing.cn/redsource/Redsource/article/id/93.html',
         ]
+      },
+      {
+        name: '中山陵',
+        tickets: '门票10元',
+        introduction: '中山陵是孙中山先生的陵墓，坐落在紫金山的灵谷寺内。整个陵园分为前、中、后三部分，包括陵墓区、纪念建筑区和游览区。陵墓气势宏伟，纪念建筑区有着丰富的历史文化展览，游览区则可以欣赏到紫金山的美丽风光。',
+        opening_hours: ' 通常早上8:00至下午5:00，但具体时间可能会根据季节而变化',
+        route_plan: '中山陵位于南京玄武区紫金山上，可搭乘公共交通工具或乘车前往',
+        imgs: [
+          'https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg',
+          'https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg',
+          'https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg',
+        ]
+      },
+      {
+        name: '总统府',
+        tickets: '门票免费，但需要预约',
+        introduction: '南京总统府位于南京市玄武区玄武门大街1号，是南京政府的正式代表机构。1939年8月1日，孙中山先生在南京就职，南京政府成立，南京总统府正式成立。',
+        opening_hours: '【 开放时间 】周一至周日 9:00-16:00',
+        route_plan: '（1）地铁：中华门站，后步行约一公里，推荐从北大门进入',
+        imgs: [
+          'https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg',
+          'https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg',
+          'https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg',
+        ]
+
       }
     ]
   },
@@ -45,5 +70,6 @@ Page({
       data: card_item
     })
     console.log(this.data.data)
+    console.log(this.data)
   },
 })

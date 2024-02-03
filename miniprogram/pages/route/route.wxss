@@ -6,7 +6,7 @@
 
 .route_item {
   background-color: aqua;
-  background-image: url('https://electron-2023-1322159997.cos.ap-nanjing.myqcloud.com/1702457087635.jpeg?q-sign-algorithm=sha1&q-ak=AKIDAOHMG_ST5pswCLONjuSfIKCB_kT-OqbCatpUofEwigLvgMQabHrZEFN7P7daC517&q-sign-time=1706865285;1706868885&q-key-time=1706865285;1706868885&q-header-list=host&q-url-param-list=ci-process&q-signature=1ddbbf0011cb228ce831d3f8a1069266ad98593a&x-cos-security-token=Ima0Mrt3taEghcRttBTaMSvvbWFf7hYaa4155e98a1d3513a526c1b2c6a4c158cchVeILHDq8L2RC-uuoYNJli1yLK-7avtNz-wx29hxD7VulPU5T8V4vu-4YILmzV_BgePkezVOOkhLvRB_92Nk86yc0sxNBqx6ncL7k75FZHyWtt8TJijEGTCp80pqxIbqdDohdgVs32EC07O-g8hPvhuzqrmX_bg1Wj3naQt_pzm5gqrZ1ABaj9Ij7gnYRxd&ci-process=originImage');
+  background-image: url('https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg');
   padding: 10px;
   margin: 10px;
   display: flex;
@@ -14,4 +14,20 @@
   justify-content: center;
   width: 600rpx;
   height: 250rpx;
+  border-radius: 30rpx;
+  position: relative;
+}
+
+.collection{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background-color: rgb(255, 0, 0);
+  border-radius: 30rpx;
 }

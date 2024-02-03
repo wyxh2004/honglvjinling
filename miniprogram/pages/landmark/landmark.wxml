@@ -1,4 +1,4 @@
-<view>
+<view class="page">
     <view class="inputbar" style="margin: 0 auto; top: 0px;">
         <!-- <image src="/images/avatar.png" mode="aspectFill" class="avatar" bindtap="goToAvatar"></image> -->
         <input type="text" class="input_text" bind:tap="goToSearch" value="{{searchKeyword}}" placeholder="查一查，发现金陵宝藏" />
@@ -8,6 +8,7 @@
     </view>
     <view wx:for="{{landmarkList}}" wx:for-item="landmark_item" wx:key="index" class="landmark">
         <navigator url="/pages/items/items?items={{landmark_item}}" class="landmark_item">
+            <view class="collection">点击收藏</view>
             {{index}} - {{landmark_item}}
         </navigator>
     </view>

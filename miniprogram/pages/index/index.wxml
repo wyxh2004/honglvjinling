@@ -1,8 +1,8 @@
 <view style="width: 366rpx; height: 1379rpx; display: block; box-sizing: border-box">
     <view class="inputbar" style="margin: 0 auto; top: 0px;">
         <!-- <image src="/images/avatar.png" mode="aspectFill" class="avatar" bindtap="goToAvatar"></image> -->
-        <input type="text" class="input_text" bind:tap="goToSearch" value="{{searchKeyword}}" placeholder="查一查，发现金陵宝藏" />
-        <button style="width: 200rpx; height: 100rpx;display: flex;align-items: center;justify-content: center;">
+        <input style="width: 576rpx; height: 70rpx; display: block; box-sizing: border-box" type="text" class="input_text" bind:tap="goToSearch" value="{{searchKeyword}}" placeholder="查一查，发现金陵宝藏" />
+        <button style="width: 144rpx; height: 70rpx; display: flex; align-items: center; justify-content: center; box-sizing: border-box; left: 0rpx; top: 0rpx">
             <image src="/images/search.png" alt="search" class="homeicon" style="width: 50rpx; height: 50rpx;" />
         </button>
     </view>
