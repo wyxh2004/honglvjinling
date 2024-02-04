@@ -1,9 +1,3 @@
-.page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .swiper-container {
     width: 100%;
     height: 300px;
@@ -11,7 +5,9 @@
 }
 
 .card_name {
+    font-size: larger;
     text-align: center;
+    margin: 10rpx;
 }
 
 .card_tickets {

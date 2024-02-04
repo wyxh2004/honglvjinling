@@ -54,4 +54,5 @@
         </button>
     </view>
     <view class="relief">© 2024 ys.wang</view>
+    <van-button>按钮</van-button>
 </view>

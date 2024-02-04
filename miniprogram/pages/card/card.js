@@ -1,14 +1,11 @@
 // pages/card/card.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     indicatorDots: true, // 是否显示指示点
     autoplay: true, // 是否自动切换
     interval: 2000, // 自动切换时间间隔
     duration: 500, // 切换动画时长
+    show:false,
     data: [
       {
         name: '雨花台烈士陵园',
@@ -58,7 +55,15 @@ Page({
         ]
 
       }
-    ]
+    ],
+  },
+
+  showPopup() {
+    this.setData({ show: true });
+  },
+
+  onClose() {
+    this.setData({ show: false });
   },
 
   onLoad(options) {

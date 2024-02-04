@@ -28,4 +28,5 @@ page {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
