@@ -45,16 +45,12 @@ Page({
             url: '/pages/search/search'
         })
     },
-});
-
-wx.cloud.callFunction({
-    // 云函数名称
-    name: 'demo',
-    // 传给云函数的参数
-    data: {
-        a: 1,
-        b: 2,
-    },
-}).then(res => {
-    console.log(res.result) // 3
-}).catch(console.error)
+    onLoad: function () {
+        wx.loadFontFace({
+          family: 'myfont', // 字体名称
+          source: url("https://wyxh-1322159997.cos.ap-nanjing.myqcloud.com/myfont.ttf"), // 替换成你的字体文件的远程 URL
+          success: console.log,
+          fail: console.error,
+        });
+      },
+}); 

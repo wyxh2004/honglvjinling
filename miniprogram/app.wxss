@@ -1,4 +1,13 @@
 /**app.wxss**/
+@font-face {
+  font-family: 'myfont';
+  src:url("https://wyxh-1322159997.cos.ap-nanjing.myqcloud.com/myfont.ttf") format('truetype');
+}
+
+body {
+  font-family: 'myfont', sans-serif;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -17,11 +26,6 @@ button:focus{
 button::after{
   border: none;
 }
-
-.custom-font-class {
-  font-family: 'CustomFontFamily', sans-serif; /* 自定义字体家族名称，后面可以跟一个备选字体 */
-}
-
 
 page {
   background: #f6f6f6;

@@ -6,10 +6,6 @@
   margin: 0 auto;
 }
 
-.custom-font-class {
-  font-family: 'CustomFontFamily', sans-serif;
-  /* 自定义字体家族名称，后面可以跟一个备选字体 */
-}
 
 .homepage {
   top: 0;
@@ -53,6 +49,7 @@
 }
 
 .inputbar {
+  font-family: 'myfont',sans-serif;
   transform: translateZ(-50%);
   display: flex;
   text-align: center;
