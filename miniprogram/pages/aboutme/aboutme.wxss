@@ -121,6 +121,10 @@ wx-button::after {
     color: #1f1f1f;
     font-size: 36rpx;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .center .blue-top .user-card .card-top .user-top .user-board .vip-icon {

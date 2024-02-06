@@ -10,7 +10,7 @@ exports.main = async (event, context) => {
     case 'getUserInformation':
       return await getUserInformation.main(event, context);
     case 'demo':
-      return await demo.main(event, context);
+      return await demo.main(event);
     // case 'getStarred':
     //   return await getStarred.main(event, context);
     default:

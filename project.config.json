@@ -13,7 +13,11 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "minified": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true
   },
   "appid": "wx58aee48851bfd95d",
   "projectname": "quickstart-wx-cloud",

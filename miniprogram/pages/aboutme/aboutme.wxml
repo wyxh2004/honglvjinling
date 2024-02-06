@@ -1,9 +1,6 @@
 <view class="center">
     <view class="blue-top">
         <view class="user-card">
-            <!-- <button bind:tap="handleBindTap" type="default">
-                <text>点击我</text>
-            </button> -->
             <view class="card-top">
                 <view class="user-top">
                     <view class="user-vip" style="position:relative;">
@@ -16,7 +13,9 @@
                         <view wx:if="{{hasUserInfo}}" class="user-name">{{userInfo.nickName}}</view>
                     </view> -->
                     <view class="user-pic" src="/images/avatar.png">
-                        <button bindtap="register" class="user-name">点击注册/登陆</button>
+                        <van-button bindtap="register" class="user-name" style="display: flex; align-items: center; justify-content: center; font-weight: bolder;" type="default">
+                            点击注册/登陆
+                        </van-button>
                     </view>
                 </view>
             </view>
@@ -54,5 +53,4 @@
         </button>
     </view>
     <view class="relief">© 2024 ys.wang</view>
-    <van-button>按钮</van-button>
 </view>

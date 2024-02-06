@@ -7,9 +7,9 @@
         </button>
     </view>
     <view wx:for="{{landmarkList}}" wx:for-item="landmark_item" wx:key="index" class="landmark">
-        <navigator url="/pages/items/items?items={{landmark_item}}" class="landmark_item">
+        <navigator url="/pages/items/items?items={{landmark_item.name}}" class="landmark_item">
             <view class="collection">点击收藏</view>
-            {{index}} - {{landmark_item}}
+            <van-card tag="红色地标" lazy-load="true" title="{{landmark_item.name}}" thumb="{{landmark_item.imgUrl}}" centered="true" />
         </navigator>
     </view>
 </view>

@@ -1,5 +1,7 @@
 .body {
     margin: 40rpx;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .section {

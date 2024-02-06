@@ -4,14 +4,10 @@ Page({
         // hasUserInfo: false,
         // canIUse: wx.canIUse('button.open-type.getUserInfo')
     },
-    // 事件处理函数
-    handleBindTap: function () {
-        wx.navigateTo({
-            url: '/pages/register/register'
-        })
-    },
+
     register: function () {
-        wx.navigateTo({
+        wx.redirectTo({
+            url: '/pages/register/register',
         })
     },
     //打赏
