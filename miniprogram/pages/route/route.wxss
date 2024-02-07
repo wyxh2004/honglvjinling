@@ -1,3 +1,7 @@
+.page{
+  background-image: url('https://p.ananas.chaoxing.com/star3/origin/94675c6b69d5235ea49b4dc00ed20d21.png');
+}
+
 .route {
   display: flex;
   align-items: center;
@@ -6,7 +10,7 @@
 
 .route_item {
   background-color: aqua;
-  background-image: url('https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg');
+  /* background-image: url('https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg'); */
   padding: 10px;
   margin: 10px;
   display: flex;
@@ -16,6 +20,8 @@
   height: 250rpx;
   border-radius: 30rpx;
   position: relative;
+  font-family: "STSong";
+  font-weight: 900;
 }
 
 .collection{

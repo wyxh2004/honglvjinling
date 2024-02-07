@@ -1,5 +1,5 @@
 .page {
-  background-color: antiquewhite;
+  background-image: url('https://p.ananas.chaoxing.com/star3/origin/94675c6b69d5235ea49b4dc00ed20d21.png');
 }
 
 .swiper-container {
@@ -59,8 +59,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(252, 244, 2);
-  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 25px;
   padding: 10px;
   width: 600rpx;
   height: 250rpx;
@@ -71,7 +71,7 @@
 
 .collection{
   position: absolute;
-  bottom: -50rpx;
+  bottom: -45rpx;
   right: 0;
   width: 120rpx;
   height: 40rpx;
@@ -79,6 +79,8 @@
   align-items: center;
   justify-content: center;
   z-index: 100;
-  /* background-color: rgb(255, 0, 0); */
-  border-radius: 30rpx;
+  font-family: "Microsoft YaHei";
+  font-size: smaller;
+  font-weight: bold;
+  border-radius: 40rpx;
 }

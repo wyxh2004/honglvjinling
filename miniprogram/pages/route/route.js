@@ -18,10 +18,22 @@ Page({
     },
     data: {
         routeList: [
-            '雨花台烈士陵园',
-            '南京大屠杀纪念馆',
-            '中山陵',
-            '总统府',
+            {
+                name: '雨花台烈士陵园',
+                imgUrl: 'https://example.com/yuhuatai.jpg',
+              },
+              {
+                name: '南京大屠杀纪念馆',
+                imgUrl: 'https://example.com/nanjing.jpg',
+              },
+              {
+                name: '中山陵',
+                imgUrl: 'https://example.com/zhuangshi.jpg',
+              },
+              {
+                name: '总统府',
+                imgUrl: 'https://example.com/gongwu.jpg',
+              },
         ]
     }
 });

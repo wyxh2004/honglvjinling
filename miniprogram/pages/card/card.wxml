@@ -1,16 +1,16 @@
-<view style="background-color:rgba(242, 255, 212, 0.783);">
+<view class="page">
     <!-- 轮播图 -->
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-container">
         <block wx:for="{{data.imgs}}" wx:for-item="img_item" wx:key="index">
-            <swiper-item style="display:flex;align-items:center;justify-content:center;width:100%">
+            <swiper-item>
                 <image src="{{img_item}}" class="swiper_image" mode="aspectFill"></image>
             </swiper-item>
         </block>
     </swiper>
-    <view class="card_name">{{data.name}}</view>
-    <view class="card_tickets">票价：{{data.tickets}}</view>
-    <view style="margin:20rpx;display:flex;align-items:center;justify-content:center;">坐标介绍</view>
+    <view class="card_name">--  {{data.name}}  --</view>
+    <view class="card_title">⚪   坐标介绍   ⚪</view>
     <view class="card_introduction">{{data.introduction}}</view>
+    <view class="card_tickets">票价：{{data.tickets}}</view>
     <van-cell title="点击查看景点三维模型" is-link bind:click="showPopup" />
     <van-popup show="{{ show }}" bind:close="onClose">
         <image src="/images/qrcode/ji_nian_bei.png" mode="aspectFit" style="width: 350rpx; height: 350rpx;"></image>

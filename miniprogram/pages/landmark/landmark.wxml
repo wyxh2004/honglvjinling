@@ -8,8 +8,10 @@
     </view>
     <view wx:for="{{landmarkList}}" wx:for-item="landmark_item" wx:key="index" class="landmark">
         <navigator url="/pages/items/items?items={{landmark_item.name}}" class="landmark_item">
-            <view class="collection">点击收藏</view>
             <van-card tag="红色地标" lazy-load="true" title="{{landmark_item.name}}" thumb="{{landmark_item.imgUrl}}" centered="true" />
+            <van-button class="collection" color="linear-gradient(to right, #4bb0ff, #6149f6)" size="mini">
+                点击收藏
+            </van-button>
         </navigator>
     </view>
 </view>
