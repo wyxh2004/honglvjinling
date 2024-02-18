@@ -2,7 +2,7 @@
     <view wx:for="{{routeList}}" wx:for-item="route_item" wx:key="index" class="route">
         <navigator url="/pages/card/card?card={{route_item.name}}" class="route_item">
             <view class="collection">点击收藏</view>
-            {{route_item.name}}
+            <h1>{{route_item.name}}</h1>
         </navigator>
     </view>
 </view>

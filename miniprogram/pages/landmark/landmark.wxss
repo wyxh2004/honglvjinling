@@ -1,5 +1,5 @@
 .page {
-  background-image: url('https://p.ananas.chaoxing.com/star3/origin/94675c6b69d5235ea49b4dc00ed20d21.png');
+  background-image: url("https://p.ananas.chaoxing.com/star3/origin/94675c6b69d5235ea49b4dc00ed20d21.png");
 }
 
 .swiper-container {
@@ -21,9 +21,11 @@
   align-items: center;
   border: 0px solid rgb(255, 85, 0);
   border-radius: 75px;
-  background: linear-gradient(180deg,
-      rgba(255, 99, 47, 0.904) 21%,
-      rgba(245, 214, 214, 0.881) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 99, 47, 0.904) 21%,
+    rgba(245, 214, 214, 0.881) 100%
+  );
   background-blend-mode: normal;
   padding: 10rpx;
   border: 5rpx solid rgb(255, 0, 0);
@@ -31,7 +33,6 @@
   width: 97vw;
   height: 80rpx;
 }
-
 
 .inputbar input {
   padding-left: 30rpx;
@@ -66,10 +67,9 @@
   height: 250rpx;
   border-radius: 30rpx;
   position: relative;
-  z-index: 0;
 }
 
-.collection{
+.collection {
   position: absolute;
   bottom: -45rpx;
   right: 0;

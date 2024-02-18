@@ -1,11 +1,12 @@
-.page{
-  background-image: url('https://p.ananas.chaoxing.com/star3/origin/94675c6b69d5235ea49b4dc00ed20d21.png');
+.page {
+  background-image: url("https://p.ananas.chaoxing.com/star3/origin/94675c6b69d5235ea49b4dc00ed20d21.png");
 }
 
 .route {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.5;
 }
 
 .route_item {
@@ -24,7 +25,7 @@
   font-weight: 900;
 }
 
-.collection{
+.collection {
   position: absolute;
   top: 0;
   right: 0;
