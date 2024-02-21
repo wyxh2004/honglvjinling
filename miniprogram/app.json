@@ -70,5 +70,11 @@
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-search": "@vant/weapp/search/index",
     "van-card": "@vant/weapp/card/index"
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.18",
+      "provider": "wx50b5593e81dd937a"
+    }
   }
 }

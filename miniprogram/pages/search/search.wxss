@@ -1,95 +1,100 @@
- #theMap {
-   position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 100vw;
-   height: 100%;
-   height: 100vh;
- }
+#theMap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+}
 
- .homepage {
-   transform: translateZ(-50%);
-   display: flex;
-   text-align: center;
-   position: relative;
-   align-items: center;
-   border: 0px solid rgb(255, 85, 0);
-   border-radius: 75px;
-   background: linear-gradient(180deg,
-       rgba(255, 99, 47, 0.904) 21%,
-       rgba(245, 214, 214, 0.881) 100%);
-   background-blend-mode: normal;
-   padding: 10rpx;
-   border: 5rpx solid rgb(255, 0, 0);
-   border-radius: 50rpx;
-   width: 97vw;
-   height: 80rpx;
- }
+.homepage {
+  transform: translateZ(-50%);
+  display: flex;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  border: 0px solid rgb(255, 85, 0);
+  border-radius: 75px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 99, 47, 0.904) 21%,
+    rgba(245, 214, 214, 0.881) 100%
+  );
+  background-blend-mode: normal;
+  padding: 10rpx;
+  border: 5rpx solid rgb(255, 0, 0);
+  border-radius: 50rpx;
+  width: 97vw;
+  height: 80rpx;
+}
 
+.homepage input {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  top: 50%;
+}
 
- .homepage input {
-   padding-left: 30rpx;
-   padding-right: 30rpx;
-   top: 50%;
- }
+.input_text {
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+  font-size: 30rpx;
+}
 
- .input_text {
-   width: 90%;
-   height: 90%;
-   top: 50%;
-   border-radius: 10rpx;
-   padding-left: 10rpx;
-   font-size: 30rpx;
- }
+.homeicon {
+  margin: 0 auto;
+  width: 30rpx;
+  height: 30rpx;
+}
 
- .homeicon {
-   margin: 0 auto;
-   width: 30rpx;
-   height: 30rpx;
- }
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
 
- .grid-items {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   align-items: center;
-   justify-items: center;
- }
+.items-1 {
+  padding: 10px;
+  margin: 10px;
+  width: 80px;
+  height: auto;
+  border: 0px outset rgba(100, 100, 100, 1);
+  border-radius: 75px;
+  background: linear-gradient(
+    272deg,
+    rgba(32, 247, 244, 1) 19%,
+    rgba(238, 255, 0, 1) 83%
+  );
+  background-blend-mode: overlay;
+  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.3);
+  backdrop-filter: brightness(0%);
+  -webkit-backdrop-filter: brightness(0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
- .items-1 {
-   padding: 10px;
-   margin: 10px;
-   width: 80px;
-   height: auto;
-   border: 0px outset rgba(100, 100, 100, 1);
-   border-radius: 75px;
-   background: linear-gradient(272deg,
-       rgba(32, 247, 244, 1) 19%,
-       rgba(238, 255, 0, 1) 83%);
-   background-blend-mode: overlay;
-   box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.3);
-   backdrop-filter: brightness(0%);
-   -webkit-backdrop-filter: brightness(0%);
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
-
- .items-2 {
-   padding: 10px;
-   margin: 10px;
-   width: 80px;
-   height: auto;
-   border: 0px outset rgba(100, 100, 100, 1);
-   border-radius: 75px;
-   background: linear-gradient(272deg,
-       rgba(32, 247, 244, 1) 19%,
-       rgba(238, 255, 0, 1) 83%);
-   background-blend-mode: overlay;
-   box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.3);
-   backdrop-filter: brightness(0%);
-   -webkit-backdrop-filter: brightness(0%);
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
+.items-2 {
+  padding: 10px;
+  margin: 10px;
+  width: 80px;
+  height: auto;
+  border: 0px outset rgba(100, 100, 100, 1);
+  border-radius: 75px;
+  background: linear-gradient(
+    272deg,
+    rgba(32, 247, 244, 1) 19%,
+    rgba(238, 255, 0, 1) 83%
+  );
+  background-blend-mode: overlay;
+  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.3);
+  backdrop-filter: brightness(0%);
+  -webkit-backdrop-filter: brightness(0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
