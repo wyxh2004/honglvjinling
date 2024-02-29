@@ -46,12 +46,12 @@
     {
       "root": "pages/subpages",
       "pages": [
-        "avatar/avatar",
-        "card/card",
-        "items/items",
-        "register/register",
-        "search/search",
-        "location/location"
+        "pages/avatar/avatar",
+        "pages/card/card",
+        "pages/items/items",
+        "pages/register/register",
+        "pages/search/search",
+        "pages/location/location"
       ]
     }
   ],
