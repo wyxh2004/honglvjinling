@@ -1,44 +1,47 @@
 Page({
-    data: {
-        // userInfo: null,
-        // hasUserInfo: false,
-        // canIUse: wx.canIUse('button.open-type.getUserInfo')
-    },
+  data: {
+    // userInfo: null,
+    // hasUserInfo: false,
+    // canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
 
-    register: function () {
-        wx.redirectTo({
-            url: '/pages/register/register',
-        })
-    },
-    //打赏
-    showQrcode() {
-        wx.previewImage({
-            urls: ['https://p.ananas.chaoxing.com/star3/origin/147cde54c811fd1e83701947fa847080.png'],
-            current: 'https://p.ananas.chaoxing.com/star3/origin/147cde54c811fd1e83701947fa847080.png', // 当前显示图片的http链接
-        })
-    },
-    //分享小程序
-    onShareAppMessage: function () {
-        return {
-            title: 'landmarkmap小程序',
-            path: '/pages/index/index',
-            imageUrl: '/images/position.png',
-            success: function (e) {
-                wx.showToast({
-                    title: "分享成功",
-                    icon: "success",
-                    duration: 2e3
-                });
-            },
-            fail: function (e) {
-                wx.showToast({
-                    title: "分享失败",
-                    icon: "none",
-                    duration: 2e3
-                });
-            }
-        }
-    },
+  register: function () {
+    wx.redirectTo({
+      url: "/pages/subpages/register/register",
+    });
+  },
+  //打赏
+  showQrcode() {
+    wx.previewImage({
+      urls: [
+        "https://p.ananas.chaoxing.com/star3/origin/147cde54c811fd1e83701947fa847080.png",
+      ],
+      current:
+        "https://p.ananas.chaoxing.com/star3/origin/147cde54c811fd1e83701947fa847080.png", // 当前显示图片的http链接
+    });
+  },
+  //分享小程序
+  onShareAppMessage: function () {
+    return {
+      title: "landmarkmap小程序",
+      path: "/pages/index/index",
+      imageUrl: "/images/position.png",
+      success: function (e) {
+        wx.showToast({
+          title: "分享成功",
+          icon: "success",
+          duration: 2e3,
+        });
+      },
+      fail: function (e) {
+        wx.showToast({
+          title: "分享失败",
+          icon: "none",
+          duration: 2e3,
+        });
+      },
+    };
+  },
 });
 
 // const util = require('../../utils/util.js');
@@ -135,6 +138,5 @@ Page({
 //             }
 //         })
 //     },
-
 
 // })

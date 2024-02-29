@@ -1,32 +1,93 @@
-.body {
-    margin: 40rpx;
-    font-size: larger;
-    font-weight: bolder;
+/* register.wxss */
+.container {
+  padding: 20px;
+  background-color: #f5f5f5;
 }
 
-.section {
-    margin: 40rpx 0 80rpx;
+.form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.title {
-    font-size: 36rpx;
+.form-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.input {
-    margin: 30rpx 0;
-    border-bottom: 1px solid #666;
-    padding: 20rpx 0;
-    width: 100%;
+.form-item-label {
+  width: 120px;
+  font-size: 16px;
+  color: #333;
 }
 
-.mg {
-    margin: 30rpx 0;
+.form-item-input,
+.picker {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-.area {
-    margin: 100rpx auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.picker {
+  padding-right: 30px; /* 留出箭头的空间 */
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #007aff; /* 微信蓝 */
+  border-radius: 4px;
+  text-align: center;
+}
+
+.submit-btn:active {
+  background-color: #0056b3;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #f5f5f5; /* 与容器背景色相同 */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 重置按钮的焦点效果 */
+.reset-btn:active {
+  background-color: #ddd;
+}
+
+.form-item-label,
+.form-item-input,
+.picker {
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-item-input:focus,
+.picker:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.5);
+}
+
+/* 适配不同屏幕尺寸 */
+@media (min-width: 375px) {
+  .form-item-label {
+    width: 140px;
+  }
+}
+
+@media (min-width: 414px) {
+  .form-item-label {
+    width: 160px;
+  }
 }

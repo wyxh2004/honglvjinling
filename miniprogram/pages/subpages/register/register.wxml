@@ -1,37 +1,27 @@
-<view class="body">
-    <form bindsubmit="submit">
-        <view class="section">
-            <view class="title">昵称：</view>
-            <input type="nickname" class="input" name="nickname" placeholder="昵称" />
+<!-- register.wxml -->
+<view class="container">
+    <form class="form">
+        <view class="form-item">
+            <view class="form-item-label">用户名：</view>
+            <input class="form-item-input" type="text" name="username" placeholder="请输入用户名" />
         </view>
-        <view class="section">
-            <view class="title">性别：</view>
-            <radio-group class="mg" name="gender">
-                <label>
-                    <radio value="male" />
-                    男
-                </label>
-                <label>
-                    <radio value="female" />
-                    女
-                </label>
-            </radio-group>
-        </view>
-        <view class="section">
-            <view class="title">年龄：</view>
-            <picker mode="date" value="{{date}}" bindchange="dateChange" fields="year" class="input" name="date">
-                <view class="picker">出生年: {{date}}</view>
+        <view class="form-item">
+            <view class="form-item-label">性别：</view>
+            <picker mode="selector" range="{{genderOptions}}" value="0" name="gender" bindchange="onGenderChange">
+                <view class="picker">{{genders[gender]}}</view>
             </picker>
         </view>
-        <view class="section">
-            <view class="title">地区：</view>
-            <picker mode="region" value="{{region}}" bindchange="regionChange" level="province" class="input" name="region">
-                <view class="picker">当前选择: {{region}}</view>
+        <view class="form-item">
+            <view class="form-item-label">年龄：</view>
+            <input class="form-item-input" type="number" name="age" placeholder="请输入年龄" />
+        </view>
+        <view class="form-item">
+            <view class="form-item-label">所在地区：</view>
+            <picker mode="region" value="{{region}}" name="region" bindchange="onRegionChange">
+                <view class="picker">{{regionLabel}}</view>
             </picker>
         </view>
-        <view class="area">
-            <button style="margin:30rpx 0;" type="primary" form-type="submit">提交</button>
-            <button style="margin:30rpx 0;" form-type="reset">重置</button>
-        </view>
+        <button class="submit-btn" bindtap="onSubmit">注册</button>
+        <button class="reset-btn" type="default" bindtap="onReset">重置</button>
     </form>
 </view>

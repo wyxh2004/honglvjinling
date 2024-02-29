@@ -46,13 +46,19 @@
     {
       "root": "pages/subpages",
       "pages": [
-        "pages/avatar/avatar",
-        "pages/card/card",
-        "pages/items/items",
-        "pages/register/register",
-        "pages/search/search",
-        "pages/location/location"
-      ]
+        "avatar/avatar",
+        "card/card",
+        "items/items",
+        "register/register",
+        "search/search",
+        "location/location"
+      ],
+      "plugins": {
+        "routePlan": {
+          "version": "1.0.18",
+          "provider": "wx50b5593e81dd937a"
+        }
+      }
     }
   ],
   "sitemapLocation": "sitemap.json",
@@ -74,11 +80,5 @@
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-search": "@vant/weapp/search/index",
     "van-card": "@vant/weapp/card/index"
-  },
-  "plugins": {
-    "routePlan": {
-      "version": "1.0.18",
-      "provider": "wx50b5593e81dd937a"
-    }
   }
 }
