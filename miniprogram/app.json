@@ -3,14 +3,7 @@
     "pages/index/index",
     "pages/landmark/landmark",
     "pages/aboutme/aboutme",
-    "pages/route/route",
-    "pages/location/location",
-    "pages/search/search",
-    "pages/avatar/avatar",
-    "pages/register/register",
-    "pages/items/items",
-    "pages/location/location.js",
-    "pages/card/card"
+    "pages/route/route"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -49,11 +42,22 @@
       }
     ]
   },
+  "subpackages": [
+    {
+      "root": "pages/subpages",
+      "pages": [
+        "avatar/avatar",
+        "card/card",
+        "items/items",
+        "register/register",
+        "search/search",
+        "location/location"
+      ]
+    }
+  ],
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
-  "requiredBackgroundModes": [
-    "location"
-  ],
+  "requiredBackgroundModes": ["location"],
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
