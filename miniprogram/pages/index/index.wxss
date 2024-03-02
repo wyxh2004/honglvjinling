@@ -6,7 +6,6 @@
   margin: 0 auto;
 }
 
-
 .homepage {
   top: 0;
   position: absolute;
@@ -42,24 +41,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100%;
-  height: 100vh;
+  width: 750rpx;
+  height: 93vh;
   z-index: -100;
 }
 
 .inputbar {
-  font-family: 'myfont',sans-serif;
   transform: translateZ(-50%);
   display: flex;
   text-align: center;
+  margin: 0 auto;
+  top: 0px;
   position: relative;
   align-items: center;
   border: 0px solid rgb(255, 85, 0);
   border-radius: 75px;
-  background: linear-gradient(180deg,
-      rgba(255, 99, 47, 0.904) 21%,
-      rgba(245, 214, 214, 0.881) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 99, 47, 0.904) 21%,
+    rgba(245, 214, 214, 0.881) 100%
+  );
   background-blend-mode: normal;
   padding: 10rpx;
   border: 5rpx solid rgb(255, 0, 0);
@@ -67,7 +68,6 @@
   width: 97vw;
   height: 80rpx;
 }
-
 
 .inputbar input {
   padding-left: 30rpx;
@@ -87,8 +87,8 @@
 
 .homeicon {
   margin: 0 auto;
-  width: 30rpx;
-  height: 30rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
 
 .button_text {

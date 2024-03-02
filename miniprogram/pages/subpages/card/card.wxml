@@ -8,7 +8,7 @@
         </block>
     </swiper>
     <view class="card_title">⚪   坐标名称   ⚪</view>
-    <view class="card_name">--  {{data.name}}  --</view>
+    <view class="card_name">{{data.name}}</view>
     <view class="card_title">⚪   坐标介绍   ⚪</view>
     <view class="card_introduction">{{data.introduction}}</view>
     <view class="card_tickets">票价：{{data.tickets}}</view>

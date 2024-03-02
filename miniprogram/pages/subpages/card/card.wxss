@@ -9,7 +9,6 @@
 
 .card_name {
   font-size: 50rpx;
-  text-align: center;
   margin: 10rpx;
   font-family: "STSong";
   font-weight: 700;
@@ -19,13 +18,11 @@
     rgba(196, 225, 249, 0.8) 100%
   );
   box-shadow: 2rpx 4rpx 12rpx rgba(0, 0, 0, 0.5);
-  background-size: auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   padding: 40rpx;
   height: 50rpx;
-  border-radius: 80rpx;
+  border-radius: 30rpx;
+  display: inline-flex;
+  align-items: center;
 }
 
 .card_tickets {

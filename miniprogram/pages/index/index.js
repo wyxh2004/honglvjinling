@@ -47,14 +47,4 @@ Page({
       url: "/pages/search/search",
     });
   },
-  onLoad: function () {
-    wx.loadFontFace({
-      family: "myfont", // 字体名称
-      source: url(
-        "https://wyxh-1322159997.cos.ap-nanjing.myqcloud.com/myfont.ttf"
-      ), // 替换成你的字体文件的远程 URL
-      success: console.log,
-      fail: console.error,
-    });
-  },
 });
