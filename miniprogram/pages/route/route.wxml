@@ -1,9 +1,11 @@
 <!-- 地标页 -->
 <view class="page">
-    <view wx:for="{{routeList}}" wx:for-item="route_item" wx:key="index" class="route">
-        <navigator url="/pages/subpages/card/card?card={{route_item.name}}" class="route_item">
-            <view class="collection">点击收藏</view>
-            <h1>{{route_item.name}}</h1>
+    <view wx:for="{{routeList}}" wx:for-item="landmark_item" wx:key="index" class="landmark">
+        <navigator url="/pages/subpages/card/card?card={{landmark_item.name}}" class="landmark_item" style="position: relative; left: -1rpx; top: 0rpx">
+            <van-card style="width: 587rpx; height: 238rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx" tag="红色地标" lazy-load="true" title="{{landmark_item.name}}" centered="true" thumb="{{landmark_item.imgUrl}}" centered="true" />
+            <van-button class="collection" bind:click="handleCollect" color="linear-gradient(to right, #4bb0ff, #6149f6)" size="mini">
+                点击收藏
+            </van-button>
         </navigator>
     </view>
 </view>
