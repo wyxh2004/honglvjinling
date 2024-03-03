@@ -29,6 +29,11 @@ Page({
       "钟山风景名胜区",
     ], // 猜你想搜数据
   },
+  // TODO: 全局搜索历史
+  // onLoad: function () {
+  //   const searchHistory = wx.getStorageSync("searchHistory") || [];
+  //   this.setData({ searchHistory });
+  // },
   onShareAppMessage: function () {
     return {
       title: "分享标题",
@@ -53,34 +58,38 @@ Page({
         icon: "none",
         duration: 2000,
       });
+      this.setData({
+        searchHistory: [...this.data.searchHistory],
+      });
+    } else {
+      this.setData({
+        searchHistory: [...this.data.searchHistory, inputValue],
+      });
+      // TODO: 方案待选
+      // wx.setStorageSync("searchHistory", this.data.searchHistory);
+      // 跳转到地名页面，并将地名作为参数传递
+      let plugin = requirePlugin("routePlan");
+      let key = "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC"; //使用在腾讯位置服务申请的key
+      let referer = "红旅金陵"; //调用插件的app的名称
+      let endPoint = JSON.stringify({
+        //终点
+        name: inputValue,
+        latitude: 39.89631551,
+        longitude: 116.323459711,
+      });
+      wx.navigateTo({
+        url:
+          "plugin://routePlan/index?key=" +
+          key +
+          "&referer=" +
+          referer +
+          "&endPoint=" +
+          endPoint,
+      });
     }
-    this.setData({
-      searchHistory: [...this.data.searchHistory, inputValue],
-      inputValue: "", // 清空输入框
-    });
 
-    // 跳转到地名页面，并将地名作为参数传递
-    let plugin = requirePlugin("routePlan");
-    let key = "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC"; //使用在腾讯位置服务申请的key
-    let referer = "红旅金陵"; //调用插件的app的名称
-    let endPoint = JSON.stringify({
-      //终点
-      name: inputValue,
-      latitude: 39.89631551,
-      longitude: 116.323459711,
+    this.setData({
+      inputValue: "",
     });
-    wx.navigateTo({
-      url:
-        "plugin://routePlan/index?key=" +
-        key +
-        "&referer=" +
-        referer +
-        "&endPoint=" +
-        endPoint,
-    });
-    // wx.navigateTo({
-    //   url:
-    //     "/pages/location/location?inputValue=" + encodeURIComponent(inputValue),
-    // });
   },
 });

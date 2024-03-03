@@ -1,3 +1,4 @@
+<!-- 地标页 -->
 <view class="page">
     <view wx:for="{{routeList}}" wx:for-item="route_item" wx:key="index" class="route">
         <navigator url="/pages/subpages/card/card?card={{route_item.name}}" class="route_item">

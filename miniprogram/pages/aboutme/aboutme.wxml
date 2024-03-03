@@ -1,56 +1,39 @@
-<view class="center">
-    <view class="blue-top">
-        <view class="user-card">
-            <view class="card-top">
-                <view class="user-top">
-                    <view class="user-vip" style="position:relative;">
-                        <image class="user-pic" src="{{hasUserInfo ? userInfo.avatarUrl : '/images/avatar.png'}}"></image>
-                    </view>
-                    <!-- <view class="user-board">
-                        <button wx:if="{{!hasUserInfo}}" class="user-name" bindtap="register">
-                            点击注册/登陆
-                        </button>
-                        <view wx:if="{{hasUserInfo}}" class="user-name">{{userInfo.nickName}}</view>
-                    </view> -->
-                    <view class="user-pic" src="/images/avatar.png">
-                        <van-button bindtap="register" class="user-name" style="display: flex; align-items: center; justify-content: center; font-weight: bolder;" type="default">
-                            点击注册/登陆
-                        </van-button>
-                    </view>
-                </view>
+<view class="_div data-v-b814dec6">
+    <view class="_div data-v-b814dec6 header">
+        <view class="_div data-v-b814dec6 my" bindtap="gotoProfile">
+            <view class="_div data-v-b814dec6 left">
+                <image src="{{userInfo.avatarUrl||'/images/avatar_default.png'}}" alt class="_img data-v-b814dec6"></image>
             </view>
-            <view class="card-bottom">
-                <view class="left">
-                    <view class="count">
-                        <text class="num">{{dailyFreeParseNum}} 个</text>
-                    </view>
-                    <text class="txt">收藏景点</text>
+            <view class="_div data-v-b814dec6 right">
+                <view wx:if="{{userInfo.nickName}}" class="_h4 data-v-b814dec6">
+                    {{userInfo.nickName}}
                 </view>
-                <view class="right">
-                    <view class="count">
-                        <text class="num">{{totalParseNum}} 条</text>
-                    </view>
-                    <text class="txt">收藏路线</text>
-                </view>
+                <button wx:else class="_button data-v-b814dec6 toLogin">登录/注册</button>
             </view>
         </view>
     </view>
-    <view class="center-list">
-        <button class="center-list-item" openType="contact">
-            <icon class="icon1" color="#00c8fd" size="50" type="kefu"></icon>
-            <text class="list-text">联系我们</text>
-            <icon class="icon2" color="#8a8a8a" size="30" type="youjiantou"></icon>
-        </button>
-        <button class="center-list-item" openType="share">
-            <icon class="icon1" color="#00c8fd" size="40" type="share"></icon>
-            <text class="list-text">分享</text>
-            <icon class="icon2" color="#8a8a8a" size="30" type="youjiantou"></icon>
-        </button>
-        <button bindtap="showQrcode" open-type="navigate" class="center-list-item">
-            <icon class="icon1" color="#00c8fd" size="50" type="zan1"></icon>
-            <text class="list-text">赞赏支持</text>
-            <icon class="icon2" color="#8a8a8a" size="30" type="youjiantou"></icon>
-        </button>
+    <view class="_div data-v-b814dec6 list">
+        <view class="_ul data-v-b814dec6">
+            <view bindtap="clearCache" class="_li data-v-b814dec6">
+                <image src="/images/clean.png" alt class="_img data-v-b814dec6"></image>
+                <label class="_span data-v-b814dec6">退出登录</label>
+                <image src="/images/toRight.png" class="_img data-v-b814dec6 right" alt srcset></image>
+            </view>
+            <view bindtap="aboutMe" class="_li data-v-b814dec6">
+                <image src="/images/icons8-more-info-64.png" alt class="_img data-v-b814dec6"></image>
+                <label class="_span data-v-b814dec6">关于我们</label>
+                <image src="/images/toRight.png" class="_img data-v-b814dec6 right" alt srcset></image>
+            </view>
+            <view bindtap="help" class="_li data-v-b814dec6">
+                <image src="/images/help.png" alt class="_img data-v-b814dec6"></image>
+                <label class="_span data-v-b814dec6"></label>
+                <image src="/images/toRight.png" class="_img data-v-b814dec6 right" alt srcset></image>
+            </view>
+            <view bindtap="sponsor" class="_li data-v-b814dec6">
+                <image src="/images/icons8-toolbox-32.png" alt class="_img data-v-b814dec6"></image>
+                <label class="_span data-v-b814dec6">赞助支持</label>
+                <image src="/images/toRight.png" class="_img data-v-b814dec6 right" alt srcset></image>
+            </view>
+        </view>
     </view>
-    <view class="relief">© 2024 ys.wang</view>
 </view>

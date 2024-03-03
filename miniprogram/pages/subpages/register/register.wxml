@@ -1,27 +1,12 @@
-<!-- register.wxml -->
-<view class="container">
-    <form class="form">
-        <view class="form-item">
-            <view class="form-item-label">用户名：</view>
-            <input class="form-item-input" type="text" name="username" placeholder="请输入用户名" />
-        </view>
-        <view class="form-item">
-            <view class="form-item-label">性别：</view>
-            <picker mode="selector" range="{{genderOptions}}" value="0" name="gender" bindchange="onGenderChange">
-                <view class="picker">{{genders[gender]}}</view>
-            </picker>
-        </view>
-        <view class="form-item">
-            <view class="form-item-label">年龄：</view>
-            <input class="form-item-input" type="number" name="age" placeholder="请输入年龄" />
-        </view>
-        <view class="form-item">
-            <view class="form-item-label">所在地区：</view>
-            <picker mode="region" value="{{region}}" name="region" bindchange="onRegionChange">
-                <view class="picker">{{regionLabel}}</view>
-            </picker>
-        </view>
-        <button class="submit-btn" bindtap="onSubmit">注册</button>
-        <button class="reset-btn" type="default" bindtap="onReset">重置</button>
-    </form>
+<view class="avatar-wrapper">
+    <button open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+        <label class="profile-label van-field__label">头像</label>
+        <image class="avatar" src="{{avatarUrl}}"></image>
+    </button>
+</view>
+<van-cell-group>
+    <van-field value="{{ nickName }}" label="昵称" placeholder="请输入昵称" input-align="right" type="nickname" bind:change="onChangeNickname" bind:blur="onBlurNickname" />
+</van-cell-group>
+<view class="submit">
+    <van-button type="primary" bind:click="submitUserInfo" size="large">完成</van-button>
 </view>

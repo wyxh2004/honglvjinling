@@ -1,54 +1,95 @@
-// register.js
+const app = getApp();
+
 Page({
+  /**
+   * 页面的初始数据
+   */
   data: {
-    genderOptions: ["男", "女"],
-    genders: { 0: "男", 1: "女" },
-    region: ["江苏省", "南京市", "浦口+区"],
-    regionLabel: "江苏省南京市浦口区",
+    avatarUrl: "/images/avatar_default.png",
+    nickName: "",
+    fileTempPath: "",
   },
-  onGenderChange: function (e) {
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    this.initInfo();
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {},
+  initInfo() {
+    let userInfo = wx.getStorageSync("userInfo");
+    //console.log(userInfo)
+    if (userInfo) {
+      this.setData({
+        avatarUrl: userInfo.avatarUrl,
+        nickName: userInfo.nickName,
+      });
+    }
+  },
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    this.initInfo();
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {},
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {},
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {},
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {},
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {},
+  onChooseAvatar(e) {
+    const { avatarUrl } = e.detail;
+    console.log(avatarUrl);
     this.setData({
-      gender: e.detail.value,
+      fileTempPath: avatarUrl,
+      avatarUrl: avatarUrl,
     });
   },
-  onRegionChange: function (e) {
+  onChangeNickname(e) {
     this.setData({
-      region: e.detail.value,
-      regionLabel: this.formatRegionLabel(e.detail.value),
+      nickName: e.detail,
     });
   },
-  formatRegionLabel: function (region) {
-    return region.join(" ");
-  },
-  onSubmit: function () {
-    const username = this.data.username;
-    const gender = this.data.gender;
-    const age = this.data.age;
-    const region = this.data.regionLabel;
-    // 在这里处理注册逻辑，例如发送数据到服务器
-    wx.cloud.callFunction({
-      name: "register",
-      data: {
-        username: username,
-        gender: gender,
-        age: age,
-        region: region,
-      },
-    });
-    wx.showToast({
-      title: "注册成功",
-      icon: "success",
-      duration: 2000,
-    });
-  },
-  onReset: function () {
-    // 重置表单数据
+  onBlurNickname(e) {
     this.setData({
-      username: "",
-      gender: "0", // 假设 '0' 对应 '男'
-      age: "",
-      region: ["江苏省", "南京市", "浦口区"],
-      regionLabel: "江苏省南京市浦口区",
+      nickName: e.detail.value,
+    });
+  },
+  submitUserInfo() {
+    let userInfo = wx.getStorageSync("userInfo") || {};
+    let filePath = this.data.fileTempPath;
+    let nickName = this.data.nickName;
+
+    userInfo.avatarUrl = filePath || userInfo.avatarUrl;
+    userInfo.nickName = nickName || userInfo.nickName;
+    wx.setStorageSync("userInfo", userInfo);
+    wx.navigateBack({
+      delta: 1,
     });
   },
 });

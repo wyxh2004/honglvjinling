@@ -24,13 +24,13 @@
       },
       {
         "pagePath": "pages/landmark/landmark",
-        "text": "地标",
+        "text": "纪念碑",
         "iconPath": "images/tab/landmark.png",
         "selectedIconPath": "images/tab/landmark-2.png"
       },
       {
         "pagePath": "pages/route/route",
-        "text": "路线",
+        "text": "地标",
         "iconPath": "images/tab/route.png",
         "selectedIconPath": "images/tab/route-2.png"
       },
@@ -46,12 +46,14 @@
     {
       "root": "pages/subpages",
       "pages": [
-        "avatar/avatar",
         "card/card",
         "items/items",
         "register/register",
         "search/search",
-        "location/location"
+        "location/location",
+        "help/help",
+        "aboutus/aboutus",
+        "sponsor/sponsor"
       ],
       "plugins": {
         "routePlan": {
@@ -79,6 +81,7 @@
     "van-cell": "@vant/weapp/cell/index",
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-search": "@vant/weapp/search/index",
-    "van-card": "@vant/weapp/card/index"
+    "van-card": "@vant/weapp/card/index",
+    "van-field": "@vant/weapp/field/index"
   }
 }

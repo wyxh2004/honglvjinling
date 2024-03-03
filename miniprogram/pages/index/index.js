@@ -44,7 +44,7 @@ Page({
   },
   goToSearch: function () {
     wx.navigateTo({
-      url: "/pages/search/search",
+      url: "/pages/subpages/search/search",
     });
   },
 });

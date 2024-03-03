@@ -1,142 +1,79 @@
+const app = getApp();
+const apis = app.apis;
+const utils = app.utils;
 Page({
   data: {
-    // userInfo: null,
-    // hasUserInfo: false,
-    // canIUse: wx.canIUse('button.open-type.getUserInfo')
+    userInfo: {},
   },
-
-  register: function () {
-    wx.redirectTo({
+  gotoProfile() {
+    wx.navigateTo({
       url: "/pages/subpages/register/register",
     });
   },
-  //打赏
-  showQrcode() {
-    wx.previewImage({
-      urls: [
-        "https://p.ananas.chaoxing.com/star3/origin/147cde54c811fd1e83701947fa847080.png",
-      ],
-      current:
-        "https://p.ananas.chaoxing.com/star3/origin/147cde54c811fd1e83701947fa847080.png", // 当前显示图片的http链接
+  // 去登陆
+  toLogin() {
+    let _this = this;
+    wx.getUserProfile({
+      desc: "获取你的昵称、头像",
+      success: (res) => {
+        let userInfo = res.userInfo;
+        _this.setData({
+          userInfo: userInfo,
+        });
+        wx.setStorageSync("userInfo", userInfo);
+      },
+      fail: (res) => {
+        //拒绝授权
+        wx.showToast({
+          title: "您拒绝了请求",
+          icon: "error",
+          duration: 2000,
+        });
+        return;
+      },
     });
   },
-  //分享小程序
-  onShareAppMessage: function () {
-    return {
-      title: "landmarkmap小程序",
-      path: "/pages/index/index",
-      imageUrl: "/images/position.png",
-      success: function (e) {
-        wx.showToast({
-          title: "分享成功",
-          icon: "success",
-          duration: 2e3,
-        });
-      },
-      fail: function (e) {
-        wx.showToast({
-          title: "分享失败",
-          icon: "none",
-          duration: 2e3,
-        });
-      },
-    };
+  onLoad() {},
+  aboutMe() {
+    wx.navigateTo({
+      url: "/pages/subpages/aboutus/aboutus",
+    });
+  },
+
+  // 清除缓存
+  clearCache() {
+    this.setData({ userInfo: {} });
+    wx.removeStorageSync("userInfo");
+    wx.showToast({
+      title: "清除成功",
+      icon: "none",
+      duration: 2000,
+    });
+  },
+
+  // 帮助
+  help() {
+    wx.navigateTo({
+      url: "/pages/subpages/help/help",
+    });
+  },
+  sponsor() {
+    wx.navigateTo({
+      url: "/pages/subpages/sponsor/sponsor",
+    });
+  },
+  getUserId() {
+    let uid = wx.getStorageSync("uid");
+    return uid;
+  },
+  onShow() {
+    let userInfo = wx.getStorageSync("userInfo");
+    console.log(userInfo);
+    this.setData({ userInfo: userInfo });
+    if (typeof this.getTabBar === "function" && this.getTabBar()) {
+      this.getTabBar().setData({
+        active: 1,
+      });
+    }
   },
 });
-
-// const util = require('../../utils/util.js');
-// var app = getApp();
-// Page({
-//     data: {
-//         dailyFreeParseNum: '--',
-//         totalParseNum: '--',
-//         userInfo: null,
-//         hasUserInfo: false,
-//     },
-//     register: function () {
-//         wx.redirectTo({
-//             url: 'pages/register/register',
-//         })
-//     },
-//     /**
-//      * 组件的方法列表
-//      */
-
-//     onLoad: function () { },
-//     onShow: function () {
-//         if (!app.checkIsLogin()) {
-//             this.setData({
-//                 hasUserInfo: false,
-//             })
-//         }
-//         if (app.globalData.hasUserInfo) {
-//             this.setData({
-//                 userInfo: app.globalData.userInfo,
-//                 hasUserInfo: app.globalData.hasUserInfo,
-//             })
-//         }
-//         // 获取每日剩余免费解析次数
-//         this.getDailyFreeParseNum(),
-//             // 获取当前用户总解析次数
-//             this.getTotalParseNum();
-//     },
-
-//     /**
-//      * 授权登录
-//      */
-//     getUserInfo(e) {
-//         if (e.detail.errMsg !== 'getUserInfo:ok') {
-//             wx.showToast({
-//                 title: '未授权，登录失败',
-//                 icon: 'none'
-//             })
-//             return false;
-//         }
-//         wx.showLoading({
-//             title: "正在登录",
-//             mask: true
-//         });
-//         // 执行登录
-//         app.getUserInfo(res => {
-//             this.setData({
-//                 userInfo: app.globalData.userInfo,
-//                 hasUserInfo: app.globalData.hasUserInfo,
-//             })
-//             wx.hideLoading();
-//         })
-//     },
-//     /**
-//      * 获取当日免费次数
-//      * 使用本地存储，不走服务端
-//      */
-//     getDailyFreeParseNum() {
-//         var num;
-//         var today = util.formatDate(new Date(), '');
-//         var lastParseDate = wx.getStorageSync('lastParseDate');
-//         if (lastParseDate != today) {
-//             wx.setStorageSync('lastParseDate', today);
-//             wx.setStorageSync('dailyFreeParseNum', app.globalData.defaultDailyFreeParseNum);
-//             num = app.globalData.defaultDailyFreeParseNum;
-//         } else {
-//             num = wx.getStorageSync('dailyFreeParseNum');
-//         }
-//         this.setData({
-//             dailyFreeParseNum: num
-//         })
-//     },
-
-//     /**
-//      * 获取总解析次数
-//      */
-//     getTotalParseNum() {
-//         app.apiRequest({
-//             url: '/records/total',
-//             success: res => {
-//                 this.setData({
-//                     totalParseNum: res.data.total_num
-//                 })
-//             }
-//         })
-//     },
-
-// })
