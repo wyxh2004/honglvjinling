@@ -1,2 +1,14 @@
-<!--pages/subpages/aboutus/aboutus.wxml-->
-<text>pages/subpages/aboutus/aboutus.wxml</text>
+<view class="project-container">
+    <view class="project-title">项目名称：</view>
+    <view style="text-align:center">南京红色地标3D云游</view>
+    <view class="project-title">项目简介：</view>
+    <view class="project-content">
+        “南京红色地标3D云游”是一款致力于传播红色文化、再现历史场景的小程序，通过先进的三维建模和VR虚拟现实技术，为用户打造沉浸式的学习与游览体验。该小程序由专业团队精心研发，结合南京市丰富的红色教育资源，将南京重要的红色地标如渡江胜利纪念馆、雨花台烈士陵园、梅园新村纪念馆等进行1:1高精度数字化重建，让用户足不出户就能身临其境地感受那段光辉的历史岁月。
+    </view>
+    <view class="project-title">主要功能特点：</view>
+    <view class="project-content">
+        <text>三维立体展示：</text>
+        利用3D建模技术，对南京各大红色地标进行了全方位、立体化的复刻，用户可以自由旋转、缩放模型，从各个角度深入了解建筑的外观结构及其背后的故事。
+        <!-- 其他功能特点的文本内容 -->
+    </view>
+</view>

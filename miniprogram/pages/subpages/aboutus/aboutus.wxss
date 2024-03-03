@@ -1,1 +1,19 @@
-/* pages/subpages/aboutus/aboutus.wxss */
+.project-container {
+  padding: 20rpx;
+  background-image: url("https://p.ananas.chaoxing.com/star3/origin/94675c6b69d5235ea49b4dc00ed20d21.png");
+  height: 1000rpx;
+}
+
+.project-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+  text-align: center;
+  padding: 30rpx;
+}
+
+.project-content {
+  font-size: 28rpx;
+  line-height: 1.5;
+  margin-bottom: 20rpx;
+}

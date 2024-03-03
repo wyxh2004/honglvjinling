@@ -6,7 +6,7 @@
             </view>
             <view class="_div data-v-b814dec6 right">
                 <view wx:if="{{userInfo.nickName}}" class="_h4 data-v-b814dec6">
-                    {{userInfo.nickName}}
+                    欢迎您： {{userInfo.nickName}}
                 </view>
                 <button wx:else class="_button data-v-b814dec6 toLogin">登录/注册</button>
             </view>
@@ -19,17 +19,17 @@
                 <label class="_span data-v-b814dec6">退出登录</label>
                 <image src="/images/toRight.png" class="_img data-v-b814dec6 right" alt srcset></image>
             </view>
+            <view bindtap="help" class="_li data-v-b814dec6">
+                <image src="/images/help.png" alt class="_img data-v-b814dec6"></image>
+                <label class="_span data-v-b814dec6">帮助中心</label>
+                <image src="/images/toRight.png" class="_img data-v-b814dec6 right" alt srcset></image>
+            </view>
             <view bindtap="aboutMe" class="_li data-v-b814dec6">
                 <image src="/images/icons8-more-info-64.png" alt class="_img data-v-b814dec6"></image>
                 <label class="_span data-v-b814dec6">关于我们</label>
                 <image src="/images/toRight.png" class="_img data-v-b814dec6 right" alt srcset></image>
             </view>
-            <view bindtap="help" class="_li data-v-b814dec6">
-                <image src="/images/help.png" alt class="_img data-v-b814dec6"></image>
-                <label class="_span data-v-b814dec6"></label>
-                <image src="/images/toRight.png" class="_img data-v-b814dec6 right" alt srcset></image>
-            </view>
-            <view bindtap="sponsor" class="_li data-v-b814dec6">
+            <view bindtap="showQrcode" open-type="navigate" class="_li data-v-b814dec6">
                 <image src="/images/icons8-toolbox-32.png" alt class="_img data-v-b814dec6"></image>
                 <label class="_span data-v-b814dec6">赞助支持</label>
                 <image src="/images/toRight.png" class="_img data-v-b814dec6 right" alt srcset></image>

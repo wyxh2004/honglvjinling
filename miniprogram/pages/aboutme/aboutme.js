@@ -33,6 +33,15 @@ Page({
       },
     });
   },
+  showQrcode() {
+    wx.previewImage({
+      urls: [
+        "https://p.ananas.chaoxing.com/star3/origin/147cde54c811fd1e83701947fa847080.png",
+      ],
+      current:
+        "https://p.ananas.chaoxing.com/star3/origin/147cde54c811fd1e83701947fa847080.png", // 当前显示图片的http链接
+    });
+  },
   onLoad() {},
   aboutMe() {
     wx.navigateTo({
@@ -40,7 +49,6 @@ Page({
     });
   },
 
-  // 清除缓存
   clearCache() {
     this.setData({ userInfo: {} });
     wx.removeStorageSync("userInfo");
