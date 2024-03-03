@@ -19,14 +19,6 @@ Page({
   data: {
     routeList: [
       {
-        name: "雨花台烈士陵园",
-        imgUrl: "https://example.com/yuhuatai.jpg",
-      },
-      {
-        name: "南京大屠杀纪念馆",
-        imgUrl: "https://example.com/nanjing.jpg",
-      },
-      {
         name: "南京抗日航空烈士纪念馆",
         imgUrl: "https://example.com/zhuangshi.jpg",
       },

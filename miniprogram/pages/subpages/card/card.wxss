@@ -21,13 +21,27 @@
   padding: 40rpx;
   height: 50rpx;
   border-radius: 30rpx;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.card_tickets {
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container .card_tickets {
   margin: 20rpx;
   font-family: "STSong";
+  border: 2rpx solid #4ce8d6;
+  padding: 10rpx;
+  height: 180rpx;
+  background: linear-gradient(
+    0deg,
+    rgba(48, 224, 121, 0.5) 40%,
+    rgba(196, 225, 249, 0.8) 100%
+  );
+  box-shadow: 2rpx 4rpx 12rpx rgba(0, 0, 0, 0.5);
 }
 
 .card_title {
@@ -49,8 +63,8 @@
   padding: 25rpx;
   background: linear-gradient(
     0deg,
-    rgba(130, 242, 218, 0.5) 40%,
-    rgba(196, 225, 249, 0.8) 100%
+    rgba(151, 240, 244, 0.5) 40%,
+    rgba(233, 245, 255, 0.8) 100%
   );
   box-shadow: 2rpx 4rpx 12rpx rgba(0, 0, 0, 0.5);
 }

@@ -71,6 +71,7 @@ Page({
       let plugin = requirePlugin("routePlan");
       let key = "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC"; //使用在腾讯位置服务申请的key
       let referer = "红旅金陵"; //调用插件的app的名称
+      let mode = "transit"; //导航类型
       let endPoint = JSON.stringify({
         //终点
         name: inputValue,
@@ -84,7 +85,9 @@ Page({
           "&referer=" +
           referer +
           "&endPoint=" +
-          endPoint,
+          endPoint +
+          "&mode=" +
+          mode,
       });
     }
 

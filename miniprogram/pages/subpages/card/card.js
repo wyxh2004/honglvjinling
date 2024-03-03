@@ -22,47 +22,6 @@ Page({
         ],
       },
       {
-        name: "南京大屠杀纪念馆",
-        tickets: "门票价格会根据季节和具体的区域有所不同，通常有不同的套票选择",
-        introduction:
-          "南京大屠杀纪念馆位于南京市雨花台区中华门大街100号，是南京大屠杀的纪念地，也是全国重点文物保护单位。南京大屠杀是1937年9月14日南京大屠杀发生后，中国军民为纪念这一历史事件而建立的纪念性纪念馆。纪念馆以“国家公祭”为主题，以“国家公祭日”为年节。雨花台风景名胜区位于南京市雨花台区北部中华门外，占地面积153.7万平方米。雨花台风景名胜区是中国新民主主义革命的纪念圣地，是新中国规模最大的纪念性陵园，是全国重点文物保护单位、全国爱国主义教育示范基地、国家首批AAAA级旅游区和百家红色旅游经典景区，是一个集教育、旅游、休闲、娱乐为一体的江苏省级纪念性风景名胜区。雨花台风景名胜区位于南京市雨花台区北部中华门外，占地面积153.7万平方米。雨花台风景名胜区是中国新民主主义革命的纪念圣地，是新中国规模最大的纪念性陵园，是全国重点文物保护单位、全国爱国主义教育示范基地、国家首批AAAA级旅游区和百家红色旅游经典景区，是一个集教育、旅游、休闲、娱乐为一体的江苏省级纪念性风景名胜区。",
-        opening_hours: "【 开放时间 】周一至周日 9:00-16:00",
-        route_plan:
-          "（1）地铁：中华门站，后步行约一公里，推荐从北大门进入 1231231223123",
-        imgs: [
-          "https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg",
-          "https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg",
-        ],
-      },
-      {
-        name: "中山陵",
-        tickets: "门票10元",
-        introduction:
-          "中山陵是孙中山先生的陵墓，坐落在紫金山的灵谷寺内。整个陵园分为前、中、后三部分，包括陵墓区、纪念建筑区和游览区。陵墓气势宏伟，纪念建筑区有着丰富的历史文化展览，游览区则可以欣赏到紫金山的美丽风光。雨花台风景名胜区位于南京市雨花台区北部中华门外，占地面积153.7万平方米。雨花台风景名胜区是中国新民主主义革命的纪念圣地，是新中国规模最大的纪念性陵园，是全国重点文物保护单位、全国爱国主义教育示范基地、国家首批AAAA级旅游区和百家红色旅游经典景区，是一个集教育、旅游、休闲、娱乐为一体的江苏省级纪念性风景名胜区。雨花台风景名胜区位于南京市雨花台区北部中华门外，占地面积153.7万平方米。雨花台风景名胜区是中国新民主主义革命的纪念圣地，是新中国规模最大的纪念性陵园，是全国重点文物保护单位、全国爱国主义教育示范基地、国家首批AAAA级旅游区和百家红色旅游经典景区，是一个集教育、旅游、休闲、娱乐为一体的江苏省级纪念性风景名胜区。",
-        opening_hours:
-          " 通常早上8:00至下午5:00，但具体时间可能会根据季节而变化",
-        route_plan:
-          "中山陵位于南京玄武区紫金山上，可搭乘公共交通工具或乘车前往",
-        imgs: [
-          "https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg",
-          "https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg",
-          "https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg",
-        ],
-      },
-      {
-        name: "总统府",
-        tickets: "门票免费，但需要预约",
-        introduction:
-          "南京总统府位于南京市玄武区玄武门大街1号，是南京政府的正式代表机构。1939年8月1日，孙中山先生在南京就职，南京政府成立，南京总统府正式成立。雨花台风景名胜区位于南京市雨花台区北部中华门外，占地面积153.7万平方米。雨花台风景名胜区是中国新民主主义革命的纪念圣地，是新中国规模最大的纪念性陵园，是全国重点文物保护单位、全国爱国主义教育示范基地、国家首批AAAA级旅游区和百家红色旅游经典景区，是一个集教育、旅游、休闲、娱乐为一体的江苏省级纪念性风景名胜区。雨花台风景名胜区位于南京市雨花台区北部中华门外，占地面积153.7万平方米。雨花台风景名胜区是中国新民主主义革命的纪念圣地，是新中国规模最大的纪念性陵园，是全国重点文物保护单位、全国爱国主义教育示范基地、国家首批AAAA级旅游区和百家红色旅游经典景区，是一个集教育、旅游、休闲、娱乐为一体的江苏省级纪念性风景名胜区。",
-        opening_hours: "【 开放时间 】周一至周日 9:00-16:00",
-        route_plan: "（1）地铁：中华门站，后步行约一公里，推荐从北大门进入",
-        imgs: [
-          "https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg",
-          "https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg",
-          "https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg",
-        ],
-      },
-      {
         name: "南京抗日航空烈士纪念馆",
         tickets: "免费进入，红色研学套餐需要另外购买",
         introduction:
@@ -87,8 +46,8 @@ Page({
           "113路，75路，44路到达宁双路站步行136米到达；地铁1号线到天隆寺站（3口）步行799米到达。",
         imgs: [
           "https://p3.ifengimg.com/a/2018_20/b62f91cf29ca710_size310_w600_h398.png",
-          "https://lh3.googleusercontent.com/proxy/0WtXTfphKI0kqas6t8pkbkqqAnwOlTB5KOej1rIf8jF1ypchn3ckhGFMNesTxCWm7aKN_m4ih_JEIlEUI9U_Sm6g5iZtgPLCAf5lIUeSoHw1sn7jQrl6N9C8",
-          "https://lh3.googleusercontent.com/proxy/RH-_JsdkCwQKr-DftddLqv9MB0-cm0IxoU_skxd5vXDFWrbQr8DKjbQGNfvIK5lt6zrqHJe6GYOi09jCFDvO0MKjyuAbRVY03c-yFE4AmG25IZOIOJlUxto",
+          "https://imgcdn.yzwb.net/5602_1653215671000.jpg?imageMogr2/thumbnail/1080x%3E/strip/ignore-error/1|imageslim",
+          "https://p3-sdbk2-media.byteimg.com/tos-cn-i-xv4ileqgde/39a6fcb9e90643fda75be9ecaf3c2a68~tplv-xv4ileqgde-resize-w:750.image",
         ],
       },
       {
@@ -140,8 +99,8 @@ Page({
         route_plan:
           "地铁4号线到云南路，步行497m；3路，42路，78路，B15路到莫干路公交站，步行83m。",
         imgs: [
-          "https://lh3.googleusercontent.com/proxy/uEPoB4kGkRLvIyTBqcgC7gPPEQ_auUxxZm69VaVwY-z89ufKSG58U_V0toSGyADK3OMOQ2WxrO1KclKIbImT2cmygUtkLL2K4L8ZYudcZHdHddqBtD2ioIgn_Ak",
-          "https://lh3.googleusercontent.com/proxy/EE7EPN9bmULDBKF4oH3ISUUHYF5e31ADMk7a8KKkP0zqN58ITZ16FDmtumEOU812QZV7iEPMRWO59qryfQ5IVSPYvqOk4Xk1Rk6gqwmFEQxRw_DASgyoXRz3nvU",
+          "https://dimg04.c-ctrip.com/images/0103n120008g2tgn5FF20.jpg",
+          "https://p0.ifengimg.com/a/2018_33/fc8ca58d9614047_size109_w289_h268.png",
         ],
       },
 
@@ -170,7 +129,6 @@ Page({
         route_plan: "G49路，G48路，宁浦线渡船到浦口码头公交站，步行113m。",
         imgs: [
           "https://p1.ifengimg.com/a/2017_08/5e9cc1f315803a3_size305_w1600_h1066.jpg",
-          "https://www.chinakongzi.org/zx/201702/W020170223460849520494.jpg",
           "https://p6-pc-sign.douyinpic.com/image-cut-tos-priv/f80abac8ab129975bc436d41d031a848~tplv-dy-resize-origshort-autoq-75:330.jpeg?x-expires=2012486400&x-signature=Dmo5fw1D7hhAjCrl5Jb4zknOMwc%3D&from=3213915784&s=PackSourceEnum_AWEME_DETAIL&se=false&sc=cover&biz_tag=pcweb_cover&l=20231013003632F8C7BBCAF587383FEE9D",
         ],
       },
@@ -241,9 +199,7 @@ Page({
         opening_hours: "暂无",
         route_plan:
           "地铁1号线，地铁7号线到晓庄站，步行966m；24路，到金科院幕府校区。",
-        imgs: [
-          " https://lh3.googleusercontent.com/proxy/xoQvPmldvk1fKJMsghfow1XUGO4v8rpGXGvzJtpscn8l_tSg2gJ5QzsVH91dMgN6Vj6RfTirOAUcrwpmCpFq_dTmd47mfJFd3rhj",
-        ],
+        imgs: [" http://inews.gtimg.com/newsapp_bt/0/13975395981/641"],
       },
 
       {
@@ -255,7 +211,7 @@ Page({
         route_plan:
           "地铁10号线，地铁1号线到安德门站，步行947m;44路，61路，86路，98路到花神大道公交站，步行396m。",
         imgs: [
-          "https://lh3.googleusercontent.com/proxy/U_Vtd9HOSUBS6gewjI_uuFZm680tDcj7XdfMvwEDd_JJQyIP1rCKYH7RQvUeGKnCOdHueyt43S3j1yJfwXUHqoXggGb8Q17lvSuf8TerBZpZHZY8fRuU1a4fRcXP3Bv2SAAo",
+          "https://www.rednanjing.cn/upload/ueditor/20190925/5d8b2da4cd0b3.jpg",
           "https://www.rednanjing.cn/upload/ueditor/20210512/609b667fcc1c9.jpg",
           "https://jsnews.jschina.com.cn/2021/hsxal/xsdk/ah/202106/W020210630858390905875.jpg",
         ],

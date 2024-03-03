@@ -6,7 +6,7 @@
             </view>
             <view class="_div data-v-b814dec6 right">
                 <view wx:if="{{userInfo.nickName}}" class="_h4 data-v-b814dec6">
-                    欢迎您： {{userInfo.nickName}}
+                    欢迎您：     {{userInfo.nickName}}
                 </view>
                 <button wx:else class="_button data-v-b814dec6 toLogin">登录/注册</button>
             </view>
