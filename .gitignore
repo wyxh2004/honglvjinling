@@ -2,3 +2,5 @@
 /cloudfunctions
 /miniprogram/miniprogram_npm
 /miniprogram/project.config.json
+/uploadCloudFunction.sh
+/uploadCloudFunction.bat
