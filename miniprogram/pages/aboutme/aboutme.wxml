@@ -2,13 +2,13 @@
     <view class="_div data-v-b814dec6 header">
         <view class="_div data-v-b814dec6 my" bindtap="gotoProfile">
             <view class="_div data-v-b814dec6 left">
-                <image src="{{userInfo.avatarUrl||'/images/avatar_default.png'}}" alt class="_img data-v-b814dec6"></image>
+                <image src="{{userInfo.avatarUrl||'/images/avatar_default.png'}}" alt class="_img data-v-b814dec6" style="width: 191rpx; height: 187rpx; display: inline-block; box-sizing: border-box"></image>
             </view>
             <view class="_div data-v-b814dec6 right">
                 <view wx:if="{{userInfo.nickName}}" class="_h4 data-v-b814dec6">
                     欢迎您：     {{userInfo.nickName}}
                 </view>
-                <button wx:else class="_button data-v-b814dec6 toLogin">登录/注册</button>
+                <button wx:else class="_button data-v-b814dec6 toLogin" style="width: 165rpx; height: 55rpx; display: block; box-sizing: border-box; left: 0rpx; top: 33rpx; position: relative">登录/注册</button>
             </view>
         </view>
     </view>
@@ -36,4 +36,5 @@
             </view>
         </view>
     </view>
+    <label class="record">浙ICP备2024065787号-1X</label>
 </view>

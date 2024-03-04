@@ -94,3 +94,12 @@
   height: 32rpx;
   margin-top: 20rpx;
 }
+
+.record {
+  font-size: 14px;
+  color: #c2bdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx 0;
+}
