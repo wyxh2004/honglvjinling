@@ -35,7 +35,7 @@
   font-family: "STSong";
   border: 2rpx solid #4ce8d6;
   padding: 10rpx;
-  height: 180rpx;
+  height: 220rpx;
   background: linear-gradient(
     0deg,
     rgba(48, 224, 121, 0.5) 40%,

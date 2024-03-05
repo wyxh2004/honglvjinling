@@ -60,8 +60,8 @@ Page({
             },
             {
               id: 3,
-              latitude: 32.0871,
-              longitude: 118.7423,
+              latitude: 32.04285,
+              longitude: 118.8015,
               width: 40,
               height: 40,
               iconPath: "/images/position.png",

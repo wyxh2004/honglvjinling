@@ -10,7 +10,7 @@
     <view wx:for="{{landmarkList}}" wx:for-item="landmark_item" wx:key="index" class="landmark">
         <navigator url="/pages/subpages/items/items?items={{landmark_item.name}}" class="landmark_item" style="position: relative; left: -1rpx; top: 0rpx">
             <van-card style="width: 587rpx; height: 238rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx" tag="烈士陵墓" lazy-load="true" title="{{landmark_item.name}}" centered="true" thumb="{{landmark_item.imgUrl}}" centered="true" />
-            <van-button class="collection" color="linear-gradient(to right, #4bb0ff, #6149f6)" size="mini">
+            <van-button class="collection" bind:click="handleCollect" color="linear-gradient(to right, #4bb0ff, #6149f6)" size="mini">
                 点击收藏
             </van-button>
         </navigator>

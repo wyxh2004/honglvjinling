@@ -26,7 +26,7 @@ Page({
       "颜真卿",
       "南京博物院",
       "夫子庙",
-      "钟山风景名胜区",
+      "钟山",
     ], // 猜你想搜数据
   },
   // TODO: 全局搜索历史
@@ -34,6 +34,29 @@ Page({
   //   const searchHistory = wx.getStorageSync("searchHistory") || [];
   //   this.setData({ searchHistory });
   // },
+  handleClick: function () {
+    let plugin = requirePlugin("routePlan");
+    let key = "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC"; //使用在腾讯位置服务申请的key
+    let referer = "红旅金陵"; //调用插件的app的名称
+    let mode = "transit"; //导航类型
+    let endPoint = JSON.stringify({
+      //终点
+      name: it,
+      latitude: 39.89631551,
+      longitude: 116.323459711,
+    });
+    wx.navigateTo({
+      url:
+        "plugin://routePlan/index?key=" +
+        key +
+        "&referer=" +
+        referer +
+        "&endPoint=" +
+        endPoint +
+        "&mode=" +
+        mode,
+    });
+  },
   onShareAppMessage: function () {
     return {
       title: "分享标题",
@@ -67,7 +90,7 @@ Page({
       });
       // TODO: 方案待选
       // wx.setStorageSync("searchHistory", this.data.searchHistory);
-      // 跳转到地名页面，并将地名作为参数传递
+
       let plugin = requirePlugin("routePlan");
       let key = "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC"; //使用在腾讯位置服务申请的key
       let referer = "红旅金陵"; //调用插件的app的名称

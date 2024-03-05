@@ -17,6 +17,6 @@
     </view>
     <van-cell title="点击查看景点三维模型" is-link bind:click="showPopup" />
     <van-popup show="{{ show }}" bind:close="onClose">
-        <image src="https://p.ananas.chaoxing.com/star3/origin/a0f897919bedfd59ef3c1e96fe9c3904.png" mode="aspectFit" style="width: 350rpx; height: 350rpx;"></image>
+        <image src="https://p.ananas.chaoxing.com/star3/origin/a0f897919bedfd59ef3c1e96fe9c3904.png" show-menu-by-longpress="{{true}}" mode="aspectFit" style="width: 350rpx; height: 350rpx;"></image>
     </van-popup>
 </view>

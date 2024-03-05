@@ -52,4 +52,25 @@ Page({
       url: "/pages/subpages/search/search",
     });
   },
+  handleCollect: function (e) {
+    wx.cloud.callFunction({
+      name: "collectProduct",
+      data: {
+        productName: "地标名称",
+      },
+      success: (res) => {
+        wx.showToast({
+          title: "收藏成功",
+          duration: 2000,
+        });
+      },
+      fail: (err) => {
+        wx.showToast({
+          title: "收藏失败，请先登陆账号",
+          icon: "none",
+          duration: 2000,
+        });
+      },
+    });
+  },
 });

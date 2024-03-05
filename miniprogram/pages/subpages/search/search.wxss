@@ -62,7 +62,7 @@
   margin: 10px;
   width: 80px;
   height: auto;
-  border: 0px outset rgba(100, 100, 100, 1);
+  border: 10rpx solid rgb(235, 219, 219);
   border-radius: 75px;
   background: linear-gradient(
     272deg,
@@ -83,7 +83,6 @@
   margin: 10px;
   width: 80px;
   height: auto;
-  border: 0px outset rgba(100, 100, 100, 1);
   border-radius: 75px;
   background: linear-gradient(
     272deg,
@@ -97,4 +96,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 10rpx solid rgb(235, 219, 219);
 }
