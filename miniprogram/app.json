@@ -36,7 +36,7 @@
       },
       {
         "pagePath": "pages/aboutme/aboutme",
-        "text": "我的",
+        "text": "红旅金陵",
         "iconPath": "images/tab/aboutme.png",
         "selectedIconPath": "images/tab/aboutme-2.png"
       }

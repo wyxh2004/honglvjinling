@@ -53,7 +53,7 @@ Page({
     this.setData({ userInfo: {} });
     wx.removeStorageSync("userInfo");
     wx.showToast({
-      title: "清除成功",
+      title: "退出登录成功",
       icon: "none",
       duration: 2000,
     });

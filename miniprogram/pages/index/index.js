@@ -60,8 +60,8 @@ Page({
             },
             {
               id: 3,
-              latitude: 32.04285,
-              longitude: 118.8015,
+              latitude: 32.04285361767196,
+              longitude: 118.80150895663405,
               width: 40,
               height: 40,
               iconPath: "/images/position.png",
@@ -126,7 +126,6 @@ Page({
                 display: "ALWAYS",
               },
             },
-
             {
               id: 7,
               latitude: 32.457,
@@ -282,6 +281,23 @@ Page({
             },
             {
               id: 16,
+              latitude: 32.07432922594114,
+              longitude: 118.73225748388194,
+              width: 40,
+              height: 40,
+              iconPath: "/images/position.png",
+              callout: {
+                content: "渡江胜利纪念馆",
+                color: "#FFFFFF",
+                fontSize: 10,
+                borderRadius: 10,
+                bgColor: "#FF4500",
+                padding: 10,
+                display: "ALWAYS",
+              },
+            },
+            {
+              id: 17,
               latitude: res.latitude,
               longitude: res.longitude,
               iconPath: "/images/my_position.png",
