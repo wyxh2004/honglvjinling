@@ -1,3 +1,16 @@
+// const QQMapWX = require("../../utils/qqmap-wx-jssdk.js");
+
+// let map = null;
+// QQMapWX.init({
+//   key: "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC",
+//   success() {
+//     qqmapsdk = new QQMapWX({ key: "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC" });
+//   },
+//   fail(err) {
+//     console.error("腾讯地图SDK初始化失败：", err);
+//   },
+// });
+
 Page({
   onShareAppMessage: function () {
     return {

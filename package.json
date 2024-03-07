@@ -1,4 +1,6 @@
 {
+  /* 配置@为项目根目录 */
+  
   "dependencies": {
     "@vant/weapp": "^1.11.4",
     "wx-server-sdk": "^2.6.3"
