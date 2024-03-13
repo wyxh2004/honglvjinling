@@ -1,7 +1,5 @@
 .project-container {
-  padding: 20rpx;
   background-image: url("https://p.ananas.chaoxing.com/star3/origin/94675c6b69d5235ea49b4dc00ed20d21.png");
-  height: 1000rpx;
 }
 
 .project-title {

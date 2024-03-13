@@ -1,4 +1,4 @@
-// const QQMapWX = require("../../utils/qqmap-wx-jssdk.js");
+const QQMapWX = require("../../utils/qqmap-wx-jssdk.js");
 
 // let map = null;
 // QQMapWX.init({
