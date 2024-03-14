@@ -69,6 +69,9 @@
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    },
+    "scope.camera": {
+      "desc": "你的相机将用于扫描二维码"
     }
   },
   "useExtendedLib": {

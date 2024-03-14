@@ -19,6 +19,7 @@
   margin-top: 16rpx;
 }
 .header .my .left ._img {
+  border: #898989 6rpx solid;
   width: 140rpx;
   height: 140rpx;
   margin-bottom: 46rpx;

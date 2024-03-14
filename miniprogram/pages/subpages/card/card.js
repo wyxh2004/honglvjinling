@@ -112,7 +112,7 @@ Page({
         opening_hours:
           "每周二至周日9:00-17:00对外开放，每周一闭馆检修（国家法定节假日和特殊情况除外）",
         route_plan:
-          "公交559路、560路、635路 至丁圩总站，步行约570米即可到达；乘坐地铁4号线至龙江站，4号口出，步行约200米至龙江地铁站西公交站，换乘公交560路（往丁圩总站方向）至丁圩总站下车，步行约570米即可到达。",
+          "公交559路、560路、635路 至丁圩总站，步行约570米即可到达；",
         imgs: [
           "https://dimg04.c-ctrip.com/images/1me7112000cnyixfbFF45_R_800_10000_Q90.jpg?proc=source/tripcommunity",
           "https://dimg04.c-ctrip.com/images/1me6y12000cnyepiyB96B_R_800_10000_Q90.jpg?proc=source/tripcommunity",
@@ -247,7 +247,27 @@ Page({
       },
     ],
   },
-
+  // 长按图片触发扫描二维码
+  scanQRCode: function() {
+    wx.scanCode({
+      success: (res) => {
+        console.log(res);
+        wx.showToast({
+          title: '扫描成功',
+          icon: 'success',
+          duration: 2000
+        });
+      },
+      fail: (res) => {
+        console.log(res);
+        wx.showToast({
+          title: '扫描失败',
+          icon: 'none',
+          duration: 2000
+        });
+      }
+    })
+  },
   showPopup() {
     this.setData({ show: true });
   },
@@ -257,7 +277,6 @@ Page({
   },
 
   onLoad(options) {
-    // console.log(options)
     var { card } = options;
     var card_item = this.data.data.filter((item) => item.name === card)[0];
     this.setData({

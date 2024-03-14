@@ -66,8 +66,7 @@ Page({
       },
       fail: (err) => {
         wx.showToast({
-          title: "收藏失败，请先登陆账号",
-          icon: "none",
+          title: "收藏失败",
           duration: 2000,
         });
       },
