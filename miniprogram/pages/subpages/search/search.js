@@ -52,6 +52,20 @@ Page({
     },
 
   // handleClick: function () {
+  //   qqmapsdk.geocoder({
+  //     address: it,
+  //     success: (res) => {
+  //       this.setData({
+  //         searchHistory: [...this.data.searchHistory, it],
+  //         latitude: res.result.location.lat,
+  //         longitude: res.result.location.lng,
+  //       });
+  //     },
+  //     fail: (res) => {
+  //       console.log(res);
+  //     }
+  //   });
+
   //   let plugin = requirePlugin("routePlan");
   //   let key = "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC"; //使用在腾讯位置服务申请的key
   //   let referer = "红旅金陵"; //调用插件的app的名称
@@ -59,8 +73,8 @@ Page({
   //   let endPoint = JSON.stringify({
   //     //终点
   //     name: it,
-  //     latitude: 39.89631551,
-  //     longitude: 116.323459711,
+  //     latitude: res.result.location.lat,
+  //     longitude: res.result.location.lng,
   //   });
   //   wx.navigateTo({
   //     url:
@@ -75,18 +89,6 @@ Page({
   //   });
   // },
 
-  getAddress: function (address) {
-    var that = this; // 保存上下文引用
-    qqmapsdk.geocode({
-      address: address,
-      success: function (res) {
-        that.addressCoordinates = res.result;
-      },
-      fail: function (res) {
-        console.log(res);
-      }
-    })
-  },
   
   // 处理搜索按钮点击事件
   handleSearchLocation: function () {
