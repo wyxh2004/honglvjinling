@@ -1,16 +1,5 @@
 const QQMapWX = require("../../utils/qqmap-wx-jssdk.js");
 
-// let map = null;
-// QQMapWX.init({
-//   key: "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC",
-//   success() {
-//     qqmapsdk = new QQMapWX({ key: "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC" });
-//   },
-//   fail(err) {
-//     console.error("腾讯地图SDK初始化失败：", err);
-//   },
-// });
-
 Page({
   onShareAppMessage: function () {
     return {
@@ -333,6 +322,23 @@ Page({
         console.error("定位失败", err);
       },
     });
+  },
+  markerTap(e) {
+    const markerId = e.markerId;
+    console.log(markerId);
+    this.data.markers.forEach((marker) => {
+      if( marker.id == markerId){
+        wx.navigateTo({
+          url: '/pages/subpages/card/card?card='+marker.callout.content,
+        })
+      }
+    });
+    // const mkid = this.data.markers[markerId-1].id;
+    // if (markerId == mkid) {
+    //   wx.navigateTo({
+    //     url: '/pages/subpages/card/card?card=雨花台烈士陵园',
+    //   });
+    // }
   },
   goToSearch: function () {
     wx.navigateTo({

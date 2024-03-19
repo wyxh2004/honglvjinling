@@ -1,6 +1,6 @@
 <view>
     <view class="homepage" style="margin: 0 auto; top: 0px;">
-        <input type="text" class="input_text" bind:input="onInput" value="{{inputValue}}" placeholder="查一查，发现金陵宝藏" confirm-type="send" maxlength="10" />
+        <input type="text" class="input_text" bind:input="onInput" value="{{inputValue}}" placeholder="查一查，发现金陵宝藏" confirm-type="send" maxlength="20" />
         <button bind:tap="handleSearchLocation" style="width: 200rpx; height: 100rpx;display: flex;align-items: center;justify-content: center;">
             <image src="/images/search.png" alt="search" class="homeicon" style="width: 50rpx; height: 50rpx;" />
         </button>

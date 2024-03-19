@@ -16,7 +16,7 @@ Page({
           `,
         opening_hours:
           "【 开放时间 】周二至周日 8:30-17:00",
-        route_plan: "（1）地铁：中华门站，后步行约一公里，推荐从北大门进入",
+        route_plan: "地铁：中华门站，后步行约一公里，推荐从北大门进入",
         imgs: [
           "https://www.rednanjing.cn/upload/adminredsource/20191016/8108eff071cf5f907404c18c8a529b41.jpg",
           "https://wm.jschina.com.cn/zt2023/2023/qingming/ydjs/gjjlsly/202203/W020220323416247846603.jpg",

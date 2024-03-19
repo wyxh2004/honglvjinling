@@ -5,5 +5,5 @@
             <image src="/images/search.png" alt="search" class="homeicon" />
         </button>
     </view>
-    <map id="theMap" longitude="{{longitude}}" latitude="{{latitude}}" show-compass="{{true}}" enable-overlooking="{{true}}" scale="{{scale}}" markers="{{markers}}" enable-scroll="true" enable-rotate="true" bind:controltap="controlTap" style="position: relative; left: -190rpx; top: -456rpx; width: 771rpx; height: 1340rpx; display: flex; box-sizing: border-box" />
+    <map id="theMap" longitude="{{longitude}}" latitude="{{latitude}}" show-compass="{{true}}" enable-overlooking="{{true}}" scale="{{scale}}" markers="{{markers}}" enable-scroll="true" enable-rotate="true" bindmarkertap="markerTap" style="position: relative; left: -190rpx; top: -456rpx; width: 771rpx; height: 1340rpx; display: flex; box-sizing: border-box" />
 </view>
