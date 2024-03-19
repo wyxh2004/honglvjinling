@@ -333,12 +333,6 @@ Page({
         })
       }
     });
-    // const mkid = this.data.markers[markerId-1].id;
-    // if (markerId == mkid) {
-    //   wx.navigateTo({
-    //     url: '/pages/subpages/card/card?card=雨花台烈士陵园',
-    //   });
-    // }
   },
   goToSearch: function () {
     wx.navigateTo({
