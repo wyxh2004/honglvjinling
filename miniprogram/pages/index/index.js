@@ -11,6 +11,34 @@ Page({
   onReady: function () {
     this.getLocation();
   },
+  onload: function () {
+    this.fallLeaves();
+  },
+  // 创建落叶动画
+  fallLeaves: function() {
+    const animation = wx.createAnimation({
+      duration: 2000, // 动画持续时间
+      timingFunction: 'ease', // 动画速度曲线
+    });
+
+    // 随机生成落叶的初始位置和下落速度
+    const left = Math.random() * 100 + 'vw';
+    const top = -50 + 'vh';
+    const speed = Math.random() * 3000 + 2000; // 下落速度范围在 2000ms ~ 5000ms
+
+    // 设置落叶的初始位置
+    animation.translateY(top).left(left).step();
+
+    // 将动画数据保存到 data 中
+    this.setData({
+      leafAnimation: animation.export()
+    });
+
+    // 循环播放落叶动画
+    setTimeout(() => {
+      this.fallLeaves();
+    }, speed);
+  },
   data: {
     latitude: "",
     longitude: "",
