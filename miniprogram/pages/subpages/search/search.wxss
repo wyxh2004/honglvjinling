@@ -78,7 +78,7 @@
   justify-content: center;
 }
 
-.items-2 {
+/* .items-2 {
   padding: 10px;
   margin: 10px;
   width: 80px;
@@ -97,4 +97,4 @@
   align-items: center;
   justify-content: center;
   border: 10rpx solid rgb(235, 219, 219);
-}
+} */

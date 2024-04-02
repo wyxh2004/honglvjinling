@@ -50,46 +50,7 @@ Page({
       latitude: 32.0603,
       longitude: 118.7969,
     },
-
-  // handleClick: function () {
-  //   qqmapsdk.geocoder({
-  //     address: it,
-  //     success: (res) => {
-  //       this.setData({
-  //         searchHistory: [...this.data.searchHistory, it],
-  //         latitude: res.result.location.lat,
-  //         longitude: res.result.location.lng,
-  //       });
-  //     },
-  //     fail: (res) => {
-  //       console.log(res);
-  //     }
-  //   });
-
-  //   let plugin = requirePlugin("routePlan");
-  //   let key = "2ONBZ-SHJWC-SCS2Q-A77SB-ZJJJ2-OKBTC"; //使用在腾讯位置服务申请的key
-  //   let referer = "红旅金陵"; //调用插件的app的名称
-  //   let mode = "transit"; //导航类型
-  //   let endPoint = JSON.stringify({
-  //     //终点
-  //     name: it,
-  //     latitude: res.result.location.lat,
-  //     longitude: res.result.location.lng,
-  //   });
-  //   wx.navigateTo({
-  //     url:
-  //       "plugin://routePlan/index?key=" +
-  //       key +
-  //       "&referer=" +
-  //       referer +
-  //       "&endPoint=" +
-  //       endPoint +
-  //       "&mode=" +
-  //       mode,
-  //   });
-  // },
-
-  
+      
   // 处理搜索按钮点击事件
   handleSearchLocation: function () {
     var that = this; // 保存上下文引用
@@ -102,11 +63,7 @@ Page({
         icon: "none",
         duration: 2000,
       });
-      // this.setData({
-      //   searchHistory: [...this.data.searchHistory],
-      // });
     } else {
-
       // TODO: 方案待选
       // wx.setStorageSync("searchHistory", this.data.searchHistory);
 
