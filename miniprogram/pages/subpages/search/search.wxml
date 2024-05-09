@@ -1,8 +1,8 @@
 <view>
-    <view class="homepage" style="margin: 0 auto; top: 0px;">
-        <input type="text" class="input_text" bind:input="onInput" value="{{inputValue}}" placeholder="查一查，发现金陵宝藏" confirm-type="send" maxlength="20" />
-        <button bind:tap="handleSearchLocation" style="width: 200rpx; height: 100rpx;display: flex;align-items: center;justify-content: center;">
-            <image src="/images/search.png" alt="search" class="homeicon" style="width: 50rpx; height: 50rpx;" />
+    <view class="inputbar">
+        <input type="text" class="input_text" bind:tap="goToSearch" value="{{searchKeyword}}" placeholder="查一查，发现金陵宝藏" />
+        <button class="search_button">
+            <image src="/images/search.png" alt="search" class="homeicon" />
         </button>
     </view>
     <view>
@@ -13,14 +13,4 @@
             <text wx:for="{{searchHistory}}" wx:for-item="it" class="items-1">{{item}}</text>
         </view>
     </view>
-    <!-- <view>
-        <text style="font-size: 20rpx;font-weight: bold;font-family: 'Microsoft YaHei';font-size: 40rpx;margin: 50rpx; padding: 50rpx;top: 50rpx;">
-            猜你想搜：
-        </text>
-        <view class="grid-items">
-            <view wx:for="{{guessWhatToSearch}}" wx:for-item="it" class="items-2">
-                <view bind:tap="handleClick">{{it}}</view>
-            </view>
-        </view>
-    </view> -->
 </view>

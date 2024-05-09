@@ -1,9 +1,9 @@
-<view style="width: 366rpx; height: 1418rpx; display: block; box-sizing: border-box; position: relative; left: 168rpx; top: 454rpx">
-    <view class="inputbar" style="position: relative; left: -172rpx; top: -456rpx">
-        <input style="width: 576rpx; height: 70rpx; display: block; box-sizing: border-box" type="text" class="input_text" bind:tap="goToSearch" value="{{searchKeyword}}" placeholder="查一查，发现金陵宝藏" />
-        <button style="width: 144rpx; height: 70rpx; display: flex; align-items: center; justify-content: center; box-sizing: border-box; left: 0rpx; top: 0rpx">
+<view class="container">
+    <view class="inputbar">
+        <input type="text" class="input_text" bind:tap="goToSearch" value="{{searchKeyword}}" placeholder="查一查，发现金陵宝藏" />
+        <button class="search_button">
             <image src="/images/search.png" alt="search" class="homeicon" />
         </button>
     </view>
-    <map id="theMap" longitude="{{longitude}}" latitude="{{latitude}}" show-compass="{{true}}" enable-overlooking="{{true}}" scale="{{scale}}" markers="{{markers}}" enable-scroll="true" enable-rotate="true" bindmarkertap="markerTap" style="position: relative; left: -190rpx; top: -456rpx; width: 771rpx; height: 1340rpx; display: flex; box-sizing: border-box" />
+    <map id="theMap" longitude="{{longitude}}" latitude="{{latitude}}" show-compass="{{true}}" enable-overlooking="{{true}}" scale="{{scale}}" markers="{{markers}}" enable-scroll="true" enable-rotate="true" bindmarkertap="markerTap" style="position: relative; left: -179rpx; top: -452rpx; width: 771rpx; height: 1340rpx; display: flex; box-sizing: border-box" />
 </view>

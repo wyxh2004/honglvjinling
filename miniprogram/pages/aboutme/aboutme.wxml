@@ -38,7 +38,5 @@
             </view>
         </view>
     </view>
-    <label class="record">
-        image src="https://p.ananas.chaoxing.com/star3/origin/a0f897919bedfd59ef3c1e96fe9c3904.png“ bindlongtap="scanQRCode"ICP备2024065787号-1X
-    </label>
+    <label class="record">ICP备2024065787号-1X</label>
 </view>

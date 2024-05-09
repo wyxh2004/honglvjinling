@@ -13,27 +13,6 @@
   height: 100%;
 }
 
-.inputbar {
-  transform: translateZ(-50%);
-  display: flex;
-  text-align: center;
-  position: relative;
-  align-items: center;
-  border: 0px solid rgb(255, 85, 0);
-  border-radius: 75px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 99, 47, 0.904) 21%,
-    rgba(245, 214, 214, 0.881) 100%
-  );
-  background-blend-mode: normal;
-  padding: 10rpx;
-  border: 5rpx solid rgb(255, 0, 0);
-  border-radius: 50rpx;
-  width: 97vw;
-  height: 80rpx;
-}
-
 .inputbar input {
   padding-left: 30rpx;
   padding-right: 30rpx;

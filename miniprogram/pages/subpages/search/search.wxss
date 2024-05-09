@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-.homepage {
+.inputbar {
   transform: translateZ(-50%);
   display: flex;
   text-align: center;
@@ -17,16 +17,18 @@
   border: 0px solid rgb(255, 85, 0);
   border-radius: 75px;
   background: linear-gradient(
-    180deg,
+    270deg,
     rgba(255, 99, 47, 0.904) 21%,
     rgba(245, 214, 214, 0.881) 100%
   );
   background-blend-mode: normal;
   padding: 10rpx;
-  border: 5rpx solid rgb(255, 0, 0);
+  border: 8rpx solid rgba(235, 64, 64, 0.854);
   border-radius: 50rpx;
   width: 97vw;
   height: 80rpx;
+  margin: 0 auto;
+  top: 0px;
 }
 
 .homepage input {
@@ -77,24 +79,3 @@
   align-items: center;
   justify-content: center;
 }
-
-/* .items-2 {
-  padding: 10px;
-  margin: 10px;
-  width: 80px;
-  height: auto;
-  border-radius: 75px;
-  background: linear-gradient(
-    272deg,
-    rgba(32, 247, 244, 1) 19%,
-    rgba(238, 255, 0, 1) 83%
-  );
-  background-blend-mode: overlay;
-  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.3);
-  backdrop-filter: brightness(0%);
-  -webkit-backdrop-filter: brightness(0%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 10rpx solid rgb(235, 219, 219);
-} */
