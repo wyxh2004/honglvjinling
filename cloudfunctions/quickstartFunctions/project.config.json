@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "openapi": ["wxacode.get"]
+  },
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "/cloudfunctions",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+  "appid": "wx58aee48851bfd95d"
+}
