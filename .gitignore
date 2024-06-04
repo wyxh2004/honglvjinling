@@ -1,6 +1,9 @@
 /node_modules
 /cloudfunctions
-/miniprogram/miniprogram_npm
-/miniprogram/project.config.json
-/uploadCloudFunction.sh
-/uploadCloudFunction.bat
+/miniprogram
+package.json
+package-lock.json
+project.config.json
+project.private.config.json
+uploadCloudFunction.sh
+uploadCloudFunction.bat
