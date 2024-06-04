@@ -1,9 +1,0 @@
-<view class="container">
-    <view class="inputbar">
-        <input type="text" class="input_text" bind:tap="goToSearch" value="{{searchKeyword}}" placeholder="查一查，发现金陵宝藏" />
-        <button class="search_button">
-            <image src="/images/search.png" alt="search" class="homeicon" />
-        </button>
-    </view>
-    <map id="theMap" longitude="{{longitude}}" latitude="{{latitude}}" show-compass="{{true}}" enable-overlooking="{{true}}" scale="{{scale}}" markers="{{markers}}" enable-scroll="true" enable-rotate="true" bindmarkertap="markerTap" style="position: relative; left: -179rpx; top: -452rpx; width: 771rpx; height: 1340rpx; display: flex; box-sizing: border-box" />
-</view>

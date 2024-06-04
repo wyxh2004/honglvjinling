@@ -1,7 +1,0 @@
-{
-    "navigationBarTitleText": "红旅金陵",
-    "backgroundTextStyle": "dark",
-    "usingComponents": {
-        "mp-dialog": "weui-miniprogram/dialog/dialog"
-    }
-}

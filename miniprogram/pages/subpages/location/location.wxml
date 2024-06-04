@@ -1,8 +1,0 @@
-<!-- <view>
-    <view class="theMap">
-        <map id="theMap" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" markers="{{markers}}" bindcontroltap="controlTap"></map>
-    </view>
-</view> -->
-<view>
-    <text>pages/location/location.js.wxml</text>
-</view>
