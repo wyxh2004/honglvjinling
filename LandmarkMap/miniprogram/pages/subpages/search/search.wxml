@@ -1,0 +1,34 @@
+<view class="page">
+  <van-search value="{{ keyword }}" shape="round" background="#eb5e5e" placeholder="查一查，发现金陵宝藏" use-action-slot bind:change="onChange" bind:search="onSearch" bind:clear="onClear">
+    <view slot="action" bind:tap="onSearch" style="color: #fff; padding: 0 30rpx;">搜索</view>
+  </van-search>
+  <view bind:touchstart="bindSearch" data-keywords="{{i.name}}" class="search-box" wx:for="{{tips}}" wx:key="i" wx:for-item="i">
+    {{i.name}}
+  </view>
+  <view class="history">
+    <view class="title">
+      <view class="text">搜索历史</view>
+      <view class="remove">
+        <van-icon name="delete-o" size="18" />
+        <text class="font" bind:tap="removeHistory">清空历史</text>
+      </view>
+    </view>
+    <view class="content">
+      <view class="item" bind:tap="onTapItem" wx:for="{{searchHistory}}" wx:key="item" data-value="{{item}}">
+        {{item}}
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view wx:if="{{spotList.length}}">
+  <view class="total" wx:if="{{total}}">
+    共检索出
+    <text>{{total}}</text>
+    个景点
+  </view>
+  <view class="main">
+    <view class="box" wx:for="{{spotList}}" wx:key="_id">
+      <spot-card></spot-card>
+    </view>
+  </view>
+</view> -->

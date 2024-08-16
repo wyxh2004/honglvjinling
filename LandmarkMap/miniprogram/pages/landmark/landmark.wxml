@@ -1,0 +1,18 @@
+<view class="page">
+    <view wx:for="{{landmarkList}}" wx:for-item="landmark_item" wx:key="index" class="landmark">
+        <spot-card shadow="2rpx 4rpx 8rpx 0 rgba(2, 4, 38, 0.05)" color="#000" size="33" title="{{landmark_item.name}}" tag="下方点击收藏">
+            <navigator url="/pages/subpages/items/items?items={{landmark_item.name}}">
+                <image src="{{landmark_item.imgUrl}}" bind:tap="goToSpot" style="width: 700rpx; height: 320rpx; border-radius: 10rpx;" />
+            </navigator>
+            <footer style="display: flex;">
+                <view wx:if="{{landmark_item.isCollected}}">
+                    {{landmark_item.id}}
+                    <van-icon style="margin-left: auto; margin-right: 50rpx;" info="收藏" name="star-o" size="35rpx" bind:click="onCollect" />
+                </view>
+                <view wx:else>
+                    <van-icon style="margin-left: auto; margin-right: 50rpx;" info="已收藏" name="star-o" size="35rpx" bind:click="onCollect" />
+                </view>
+            </footer>
+        </spot-card>
+    </view>
+</view>

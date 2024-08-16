@@ -1,0 +1,98 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/landmark/landmark",
+    "pages/aboutme/aboutme",
+    "pages/route/route",
+    "pages/me/me",
+    "pages/me/setmore/setmore"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "红旅金陵",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#ea8010",
+    "list": [
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "首页",
+        "iconPath": "images/tab/home.png",
+        "selectedIconPath": "images/tab/home-2.png"
+      },
+      {
+        "pagePath": "pages/landmark/landmark",
+        "text": "地标",
+        "iconPath": "images/tab/landmark.png",
+        "selectedIconPath": "images/tab/landmark-2.png"
+      },
+      {
+        "pagePath": "pages/route/route",
+        "text": "地标",
+        "iconPath": "images/tab/route.png",
+        "selectedIconPath": "images/tab/route-2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/tab/aboutme.png",
+        "selectedIconPath": "images/tab/aboutme-2.png"
+      }
+    ]
+  },
+  "subpackages": [
+    {
+      "root": "pages/subpages",
+      "pages": [
+        "card/card",
+        "items/items",
+        "register/register",
+        "search/search",
+        "poi/poi",
+        "help/help",
+        "aboutus/aboutus",
+        "navigation_bus/navigation",
+        "navigation_car/navigation",
+        "navigation_car_detail/navigation",
+        "navigation_ride/navigation",
+        "navigation_ride_detail/navigation",
+        "navigation_walk/navigation",
+        "navigation_walk_detail/navigation",
+        "version/version"
+      ]
+    }
+  ],
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "requiredBackgroundModes": ["location"],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "usingComponents": {
+    "spot-card": "components/spot-card/spot-card",
+    "fui-avator": "components/avator/fui-avatar",
+    "fui-icon": "components/icon/fui-icon",
+    "fui-grid": "components/grid/fui-grid",
+    "fui-grid-item": "components/grid-item/fui-grid-item",
+    "van-button": "@vant/weapp/button/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-share-sheet": "@vant/weapp/share-sheet/index",
+    "van-icon": "@vant/weapp/icon/index"
+  }
+}

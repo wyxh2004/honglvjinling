@@ -1,0 +1,64 @@
+.page {
+  background-image: url('https://p.ananas.chaoxing.com/star3/origin/934bc8a97f41ed3a2424dd39b03b7665.png');
+}
+
+.search-box {
+  margin: 10px 25px;
+  border-bottom: 1px solid #c3c3c3;
+  padding-bottom: 10px;
+}
+
+.history {
+  padding: 30rpx;
+}
+
+.history .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.history .title .text {
+  font-size: 32rpx;
+}
+
+.history .title .remove .font {
+  padding-left: 5rpx;
+}
+
+.history .content {
+  padding: 20rpx 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.history .content .item {
+  background-color: #d6d3d3;
+  color: #333;
+  font-size: 25rpx;
+  padding: 8rpx 25rpx;
+  margin: 0 20rpx 20rpx 0;
+  border-radius: 5rpx;
+}
+.total {
+  padding: 30rpx 30rpx 0;
+  font-size: 28rpx;
+  color: #666;
+}
+.total text {
+  color: #d6d3d3;
+}
+
+.main {
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .box {
+  width: 330rpx;
+  border: 1rpx solid #efefef;
+  margin-bottom: 30rpx;
+}

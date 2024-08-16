@@ -1,0 +1,24 @@
+.page {
+  position: relative; /* 使伪元素相对于.page定位 */
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1; /* 设置z-index使背景层在内容层之上 */
+  background: #e2dfdf8d;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.landmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30rpx;
+}

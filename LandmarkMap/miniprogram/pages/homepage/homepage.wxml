@@ -1,0 +1,6 @@
+<van-search value="{{ keyword }}" shape="round" background="#eb5e5e" placeholder="查一查，发现金陵宝藏" use-action-slot bind:tap="onClick">
+  <view slot="action" bind:tap="onClick" style="color: #fff; padding: 0 30rpx;">搜索</view>
+</van-search>
+<view class="container">
+  <map class="map" skew="20" longitude="{{longitude}}" latitude="{{latitude}}" show-compass="{{true}}" enable-overlooking="{{true}}" scale="{{scale}}" markers="{{markers}}" enable-scroll="true" enable-rotate="true" bindmarkertap="markerTap" />
+</view>
